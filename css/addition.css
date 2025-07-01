@@ -1,0 +1,432 @@
+@charset "UTF-8";
+/*----------------------------------------------------
+共通
+----------------------------------------------------*/
+.removal-flow-container_sp {
+  display: none;
+}
+
+.beauty_menu_p01 {
+  margin-top: 20px !important;
+}
+
+.about-wrapper .about_bg_sp {
+  display: none;
+}
+
+.docment-preview01 {
+  position: relative;
+  width: 252px;
+  height: 133px;
+  background: url(../images/doui_bg.svg);
+  box-shadow: 4px 4px 5px rgba(241, 204, 192, 0.75);
+}
+
+.docment-preview01 p.p01 {
+  width: 100%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: normal;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.docment-preview01 .arrow {
+  position: absolute;
+  width: 11px;
+  margin: 0 auto;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.docment-preview01 .arrow img {
+  width: 100%;
+  height: auto;
+}
+
+.docment-preview02 {
+  position: relative;
+  width: 252px;
+  height: 133px;
+  background: url(../images/doui_bg02.svg);
+  box-shadow: 4px 4px 5px rgba(241, 204, 192, 0.75);
+}
+
+.docment-preview02 p.p01 {
+  width: 100%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: normal;
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.docment-preview02 .arrow {
+  position: absolute;
+  width: 11px;
+  margin: 0 auto;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.docment-preview02 .arrow img {
+  width: 100%;
+  height: auto;
+}
+
+a.about-image {
+  width: 394px;
+  display: block;
+}
+
+a.about-image img {
+  width: 100%;
+  height: auto;
+}
+
+.drip-type-content1 h5 {
+  font-size: 1.16em;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-wrapper .menu-container {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+  }
+  .menu-wrapper .menu-container div {
+    width: 43vw;
+  }
+  .search-wrapper {
+    padding: 0;
+  }
+  .search-wrapper .search-container {
+    width: 90vw !important;
+    margin: 0 auto;
+    max-width: auto;
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    gap: 0;
+  }
+  .search-wrapper .search-container div {
+    width: 43vw;
+    margin-bottom: 2em;
+  }
+  .search-wrapper .search-container div .search-image {
+    width: 100%;
+  }
+  .search-wrapper .search-container div .search-image img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .about-wrapper {
+    background-image: url(../images/about-background.png);
+    background-size: cover;
+    background-position: center center;
+    padding: 0 0 85px 0;
+  }
+  footer small {
+    font-size: 10px;
+  }
+  .removal-content-wrapper .removal-content-container div {
+    padding-left: 0;
+  }
+  .beauty-content-wrapper .beauty-content-container div {
+    padding-left: 0;
+  }
+  .drip-content-wrapper .drip-content-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .drip-content-wrapper .drip-content-container div {
+    padding-left: 0;
+  }
+  .removal-flow-container {
+    display: none;
+  }
+  .removal-flow-container_sp {
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 0;
+    gap: 0;
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+  }
+  .removal-flow-container_sp .image_text {
+    width: 100%;
+  }
+  .removal-flow-container_sp .image_text img {
+    width: 100%;
+    height: auto;
+  }
+  .removal-flow-container_sp .flow_box {
+    width: calc( (100% - 70px) / 2 );
+    margin-bottom: 20px;
+  }
+  .removal-flow-container_sp p span {
+    font-size: 1.714em;
+    color: #fff;
+    padding: 0 5px 0 0;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .removal-flow-container_sp img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  .removal-flow-image-right::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px #1a1a1a solid;
+    border-right: 1px #1a1a1a solid;
+    position: absolute;
+    rotate: -45deg;
+    left: calc( 50% - 10px );
+    top: 30%;
+  }
+  .removal-flow-image-right {
+    margin: 0;
+  }
+  .faq-common-wrapper .faq-common-container .title {
+    padding: 20px 3em 20px 1.5em;
+  }
+  .faq-common-container .title::after,
+  .faq-common-container .title::before {
+    top: 33%;
+    right: 7%;
+  }
+  .doctors-item-container {
+    max-width: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    gap: 0;
+  }
+  .doctors-item-container div {
+    width: 45vw;
+  }
+  .doctors-item-container img {
+    margin: 40px 0 10px 0;
+    width: 100%;
+  }
+  .removal-menu-list {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .removal-menu-list ul {
+    display: flex;
+    display: -ms-flex;
+    display: -webkit-flex;
+    text-align: left;
+    padding: 0;
+    margin-left: 10px;
+  }
+  .removal-menu-list ul li {
+    width: 40vw;
+    padding: 0;
+    text-align: left;
+  }
+  .about-wrapper {
+    position: relative;
+    background-image: none;
+  }
+  .about-wrapper .about_bg_sp {
+    width: 25vw;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: -10;
+    display: block;
+  }
+  .about-wrapper .about_bg_sp img {
+    width: 100%;
+    height: auto;
+  }
+  a.about-image {
+    width: 90vw;
+    margin: 0 auto;
+    display: block;
+  }
+  a.about-image img {
+    width: 100%;
+    height: auto;
+  }
+  .header-menu li.has-child:active > ul,
+  .header-menu li.has-child ul li:active > ul {
+    visibility: visible !important;
+    display: block !important;
+    opacity: 1 !important;
+  }
+  .search-wrapper {
+    padding-bottom: 1px;
+  }
+  .search-detail {
+    font-size: 0.875em;
+    width: fit-content;
+    background-color: #fff;
+    text-align: center;
+    margin: 14px auto 0 auto;
+    padding: 18px 50px;
+    box-shadow: 4px 4px 5px rgba(241, 204, 192, 0.75);
+    position: relative;
+    margin-bottom: 42px;
+  }
+  .search-detail::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background-color: #1A1A1A;
+    top: 50%;
+    right: -10%;
+  }
+  .flow-of-treatment-step-wrapper dl {
+    padding: 30px 0;
+  }
+  .flow-of-treatment-step-wrapper dl dt {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .flow-of-treatment-step-wrapper dl dd {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .flow-of-treatment-step-wrapper dl dd p {
+    margin-top: 10px;
+  }
+  .flow-of-treatment-step-wrapper .tel {
+    width: 80vw !important;
+    margin: 0 auto !important;
+    gap: 0 !important;
+    padding: 0 !important;
+    display: block;
+  }
+  .flow-of-treatment-step-wrapper .tel img {
+    width: 100%;
+    height: auto;
+  }
+  .beauty-price-list .title {
+    font-weight: normal;
+  }
+  .laser-device-container {
+    width: 95vw;
+    margin: 0 auto;
+  }
+  .laser-device-container img {
+    width: 100%;
+    height: auto;
+  }
+  .pico-menu-img {
+    display: block;
+    padding: 50px 0;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .pico-menu-img img {
+    width: 100%;
+    height: auto;
+  }
+  .pico-menu-title ul {
+    display: block;
+    gap: 0;
+    justify-content: center;
+  }
+  .pico-menu-title ul li {
+    margin-bottom: 20px;
+  }
+  .tattoo-content-can, .tattoo-content-cannot {
+    padding: 40px 1.5em 10px;
+  }
+  .tattoo-content-can h4,
+  .tattoo-content-cannot h4 {
+    font-size: 1.33em;
+    width: fit-content;
+    margin: 0 0 25px 0;
+  }
+  .tattoo-flow-container div {
+    padding: 35px 1.5em;
+  }
+  .tattoo-risk-container {
+    background-color: #fff;
+    border: 1px #A48A81 solid;
+    padding: 40px 1.5em;
+  }
+  .doctors-title h3 {
+    text-align: center;
+    padding: 60px 0 50px 0;
+    font-size: 2em;
+    letter-spacing: 0.15em;
+  }
+  .beauty-menu-container-content {
+    max-width: auto;
+    margin: 0 auto 35px auto;
+    border: 0.75px #1a1a1a solid;
+    border-radius: 15px;
+    display: block;
+    justify-content: space-between;
+  }
+  .beauty-menu-title {
+    padding: 35px 1.5em;
+  }
+  .beauty-menu-title h5 {
+    font-size: 1.313em;
+    color: #C7AF06;
+    padding: 0 0 15px 0;
+  }
+  .beauty-menu-title div {
+    display: flex;
+    gap: 0.625em;
+    padding: 15px 0 0 0;
+  }
+  .beauty-menu-more {
+    background-color: #E6DB90;
+    border-radius: 0 0 15px 15px;
+    font-size: 0.875em;
+    padding: 20px 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .beauty-menu-more p::after {
+    content: url(../images11/more.svg);
+    display: block;
+    width: 30px;
+    position: absolute;
+    left: 70px;
+    top: 17px;
+  }
+}

@@ -1,0 +1,268 @@
+@charset "utf-8";
+.beauty-fv-wrapper{ /* ここ変える */
+    background-image: url(../images11/fv-beauty-bg.jpg); /* ここ変える */
+}
+/* /FV */
+
+/* beauty-content */
+.beauty-content-wrapper {
+    background-color: #F8F7F6;
+    padding: 50px 0 65px 0;
+}
+.beauty-content-wrapper h3 {
+    font-size: 2em;
+    color: #A48A81;
+    border-bottom: 2px dashed #A48A81;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 50px;
+    padding: 0 0 15px 0;
+}
+.beauty-content-wrapper a {
+    font-size: 0.875em;
+    display: block;
+    margin: 50px auto 0 auto;
+    padding: 15px 2.857em;
+    border: 0.75px #1a1a1a solid;
+    border-radius: 100px;
+    width: fit-content;
+    position: relative;
+}
+.beauty-content-wrapper a::after {
+    content: url(../images11/more.png);
+    position: absolute;
+    display:inline-block;
+    top: 25%;
+    right: -8%;
+}
+.beauty-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.25em;
+}
+.beauty-content-container div {
+    text-align: center;
+    font-size: 0.875em;
+}
+.beauty-content-container div div {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 40px 0;
+    gap: 10px;
+}
+.beauty-content-container div p {
+    text-align: left;
+}
+.beauty-content-text {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+.beauty-content-text p {
+    font-size: 0.875em;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+}
+
+.beauty-menu-wrapper {
+    background-color: #F8F7F6;
+    padding: 80px 20px 65px 20px;
+}
+.beauty-menu-wrapper h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 0 0 40px 0;
+    letter-spacing: 15px;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.beauty-menu-container {
+
+}
+.beauty-menu-container-content {
+    max-width: 1000px;
+    margin: 0 auto 35px auto;
+    border: 0.75px #1a1a1a solid;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.beauty-menu-title {
+    padding: 35px 3.438em;
+}
+.beauty-menu-title h5 {
+    font-size: 1.313em;
+    color: #C7AF06;
+    padding: 0 0 15px 0;
+}
+.beauty-menu-title div {
+    display: flex;
+    gap: 0.625em;
+    padding: 15px 0 0 0;
+}
+.beauty-menu-more {
+    background-color: #E6DB90;
+    border-radius: 0 15px 15px 0;
+    font-size: 0.875em;
+    padding: 0 3.214em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative
+}
+.beauty-menu-more p::after {
+    content: url(../images11/more.svg);
+    display: block;
+    width: 40%;
+    position: absolute;
+    left: 33%;
+}
+
+.scroll-box {
+    display: none;
+    margin: 0 auto;
+}
+
+
+.beauty-price-wrapper {
+    background-color: #DECEC6;
+    padding: 80px 20px 75px 20px;
+}
+.beauty-price-container {
+    max-width: 860px;
+    margin: 0 auto;
+}
+.beauty-price-container h3 {
+    text-align: center;
+    font-size: 1.563em;
+    padding: 0 0 15px 0;
+}
+.beauty-price-container h6 {
+    font-size: 0.813em;
+    text-align: right;
+    padding: 0 0 10px 0;
+}
+.beauty-price-list {
+    background-color: #FFFFFF;
+    padding: 0 1.25em;
+    border: 0.75px #1a1a1a solid;
+}
+.beauty-price-text p {
+    padding: 0 0 20px 0;
+    font-size: 0.875em;
+}
+.beauty-price-list p span {
+    color: #DE8575;
+}
+.beauty-price-list p .two {
+    color: #2A90BF;
+}
+
+
+
+
+.beauty-price-list .accordion {
+    border-bottom: 0.75px #1a1a1a solid;
+    padding: 5px 0 15px 0;
+    margin: 0 0 32px 0;
+}
+.beauty-price-list .option {
+    margin: 30px 0 0 0;
+}
+.beauty-price-list .title {
+    background-color: #EFE1DF;
+    font-size: 0.875em;
+    padding: 25px 2.5em;
+    display: flex;
+    align-items: center;
+}
+.beauty-price-list .title::after,
+.beauty-price-list .title::before {
+    background-color: #1A1A1A;
+    top: 45%;
+    right: 3.5%;
+}
+.beauty-price-list .content-wrapper {
+    padding: 5px 2em 25px 2em;
+    background-color: #F8F7F6;
+}
+.beauty-price-list .content-wrapper div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.75px #1a1a1a dashed;
+    padding: 25px 0 10px ;
+}
+
+.beauty-price-list-set .title {
+    background-color: #EDE5AF;
+    font-size: 1.05em;
+    align-items: flex-end;
+    line-height: 30px;
+}
+.beauty-price-list-set .title span {
+    font-size: 1.765em;
+    padding: 0 5px 5px 5px;
+}
+
+/* ////////////////////////
+    sp
+//////////////////////// */
+@media screen and (max-width: 690px) {
+    .beauty-content-wrapper,
+    .search-wrapper,
+    .beauty-menu-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .beauty-content-container {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .beauty-menu-container-content {
+        display: none;
+    }
+
+        /*===========
+    .scroll-box
+    ===========*/
+    .scroll-box {
+        display: block;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+    .scroll-box div img {
+        max-width: 100%;
+        min-width: 600px;
+        vertical-align: top;
+    }
+    
+    /*===========
+    scrollbar
+    ===========*/
+    /*スクロールバー全体の高さ*/
+    .scroll-box::-webkit-scrollbar {
+        height: 4px;
+    }
+    /*スクロールバー全体の背景*/
+    .scroll-box::-webkit-scrollbar-track {
+        background: #eee;
+    }
+    /*スクロールバーの動く部分*/
+    .scroll-box::-webkit-scrollbar-thumb {
+        background: #aaa;
+        border: none;
+    }
+    /*スクロールバーの動く部分のホバー（マウスオーバー）*/
+    .scroll-box::-webkit-scrollbar-thumb:hover {
+        background: #999;
+    }
+
+    .beauty-price-list-set label {
+        font-size: 1vw;
+    }
+
+}

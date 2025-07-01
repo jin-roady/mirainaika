@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+.accordion {
+    margin: 0 auto;
+    /* max-width: 1000px; */
+    }
+    .toggle {
+    display: none;
+    }
+    .option {
+    position: relative;
+    /* margin-bottom: 1em; */
+    }
+    .title,
+    .content {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: all 0.3s; /* 展開を閉じる速度 */
+    }
+    .title {
+    /* border: solid 1px #000;  枠線の色 */
+    /* background-color: #000;  背景色 */
+    /* padding: 1em; */
+    display: block;
+    /* color: #333; 文字色 */
+    font-weight: bold;
+    }
+
+    /* プラスアイコンの基本となる線の設定。
+    色・サイズ・場所・アニメーション速度等を指定しています。
+    ::beforeと::afterで2本設定し、
+    38行目で1本だけ90度倒しプラスにしています。 */
+    .title::after,
+    .title::before {
+    content: "";
+    position: absolute;
+    /* right: 1.25em; */
+    /* top: 1.25em; */
+    width: 2px;
+    height: 0.75em;
+    /* background-color: #000;  ＋の色 */
+    transition: all 0.3s;
+    }
+    .title::after {
+    transform: rotate(90deg);
+    }
+    .content {
+    max-height: 0;
+    overflow: hidden;
+    }
+    .content p {
+    margin: 0;
+    /* padding: 0.5em 1em 1em; */
+    /* font-size: 0.9em; */
+    /* line-height: 1.5; */
+    /* background-color: black; pの背景色*/
+    }
+
+    /* 展開した時の最大の高さと展開する速度を指定しています。
+    高さより内容量が多い場合は、はみ出た分は表示されません。 */
+    .toggle:checked + .title + .content {
+    max-height: 1000px;
+    transition: all 1.5s;
+    }
+
+    /* 展開した時にプラスボタンの縦棒を90度倒してマイナスに見える様にしています。 */
+    .toggle:checked + .title::before {
+    transform: rotate(90deg) !important;
+    }
+
+/* ////////////////////////
+    sp
+//////////////////////// */
+@media screen and (max-width: 520px) {
+}

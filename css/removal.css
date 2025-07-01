@@ -1,0 +1,488 @@
+@charset "utf-8";
+.removal-fv-wrapper{
+    background-image: url(../images5/fv-removal-bg@2x.jpg);
+}
+/* /FV */
+
+/* removal-content */
+.removal-content-wrapper {
+    background-color: #F8F7F6;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 0 50px 0;
+}
+.removal-content-wrapper h3 {
+    font-size: 2em;
+    color: #A48A81;
+    border-bottom: 2px dashed #A48A81;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 45px;
+    padding: 70px 0 15px 0;
+
+}
+.removal-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+.removal-content-container div {
+    text-align: center;
+    font-size: 0.875em;
+}
+.removal-content-container div div {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 45px 0;
+    gap: 10px;
+}
+.removal-content-container div p {
+    text-align: left;
+}
+.removal-content-container img {
+    width: 125px;
+}
+.removal-content-container div div img {
+    width: 32px;
+}
+
+.removal-content-text {
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 0 14px 0;
+}
+.removal-content-text p {
+    padding: 0 0 30px 0;
+}
+.removal-content-text .modal-open a {
+    display: block;
+    padding: 0 0 2px 0;
+    margin: 0 0 14px 0;
+    border-bottom: 1px #1A1A1A solid;
+    width: fit-content;
+}
+.removal-content-text .modal-open a::before{
+    content: "";
+    border: 4px solid transparent;
+    border-top: 5px solid #000;
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+    display: inline-block;
+    transform: rotate(270deg);
+}
+.permanent-hair-removal {
+    background-color: #fff;
+    border: #A48A81 2px solid;
+    padding: 30px 2.813em;
+    margin: 16px 0 60px 0;
+}
+.permanent-hair-removal h5 {
+    font-size: 1.2em;
+    background: linear-gradient(180deg, #fff 0%, #fff 70%, #ECBBAF 70%, #ECBBAF 100%);
+    width: fit-content;
+    margin: 0 0 20px 0;
+}
+.permanent-hair-removal p {
+    padding: 0 0 30px 0;
+    font-size: 0.875em;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
+.permanent-hair-removal .dotted-line {
+    margin-bottom: 30px;
+}
+.permanent-hair-removal p span {
+    color: #DE8575;
+}
+.removal-button {
+    font-size: 0.875em;
+    border: #1A1A1A 1px solid;
+    border-radius: 100px;
+    padding: 15px 2.5em;
+    margin: 0 auto;
+    width: fit-content;
+    position: relative;
+}
+.removal-button::after {
+    content: url(../images11/more.png);
+    position: absolute;
+    display:inline-block;
+    top: 25%;
+    right: -8%;
+}
+/* /removal-content */
+
+/* removal-menu */
+.removal-menu-wrapper {
+    background-color: #F8F7F6;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.removal-menu-list h3,
+.removal-menu-list h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 80px 0 50px 0;
+    letter-spacing: 0.3em;
+}
+.removal-menu-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 0 auto;
+    gap: 35px 0;
+    padding: 0 50px;
+}
+.removal-menu-list ul li{
+    width: 11.25em;
+}
+.removal-menu-list ul li a::before{
+    content: "";
+    border: 4px solid transparent;
+    border-top: 5px solid #000;
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+    display: inline-block;
+    transform: rotate(270deg);
+}
+.removal-menu-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 75px 0 10px 0;
+}
+.removal-menu-title h4 {
+    font-size: 1.5625em;
+    padding-left: 20px;
+    border-left: 6px solid #000;
+}
+.removal-menu-title p {
+    font-size: 0.813em;
+}
+.removal-menu-price {
+    background-color: #fff;
+    border: 2px #1a1a1a solid;
+    padding: 10px 1.25em 0 1.25em;
+}
+
+
+
+
+.removal-menu-price .option {
+    margin: 13px 0 0 0;
+}
+.removal-menu-price .title {
+    background-color: #EFE1DF;
+    font-size: 0.875em;
+    padding: 25px 2.5em;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.removal-menu-price .title::after,
+.removal-menu-price .title::before {
+    top: 33%;
+    right: 4.5%;
+}
+.removal-menu-price .content-wrapper {
+    padding: 5px 2em 25px 2em;
+    background-color: #F8F7F6;
+}
+.removal-menu-price .content-wrapper div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.75px #1a1a1a dashed;
+    padding: 25px 0 10px ;
+}
+.removal-menu-man .title {
+    background-color: #D8E4EA;
+}
+
+
+
+.removal-menu-price a {
+    display: block;
+    font-size: 0.875em;
+    border: #1a1a1a 0.75px solid;
+    border-radius: 100px;
+    padding: 12px 3.929em;
+    width: fit-content;
+    margin: 25px auto 20px auto;
+    position: relative;
+}
+.removal-menu-price a::after {
+    content: url(../images11/more.png);
+    position: absolute;
+    display:inline-block;
+    top: 25%;
+    right: -8%;
+}
+.removal-menu-comment {
+    padding: 30px 0 15px 0;
+}
+.removal-menu-comment span {
+    color: #DE8575;
+}
+.removal-menu-comment p {
+    font-size: 0.875em;
+    padding: 0 0 25px 0;
+}
+
+.removal-gakuwari-container {
+    padding: 55px 0 80px 0;
+
+}
+.removal-gakuwari-container h4 {
+    background-image: url(../images5/title-back.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    font-size: 1.313em;
+    text-align: center;
+    padding: 45px 0 45px 0;
+}
+.removal-gakuwari-container h6 {
+    font-size: 1.313em;
+    text-align: center;
+    padding: 0 0 30px 0;
+}
+.removal-gakuwari-container h6 span{
+    color: #C7AF06;
+}
+.removal-gakuwari-container .dotted-line {
+    border: #A48A81 1px dashed;
+    margin: 0 0 30px 0;
+}
+.removal-gakuwari-container p {
+    font-size: 0.875em;
+    padding: 0 0 20px 0;
+}
+.removal-gakuwari-container p span{
+    color: #DE8575;
+
+}
+/* /removal-menu */
+
+/* removal-attention */
+.removal-attention-wrapper {
+    background-color: #F9DDD2;
+    padding: 55px 0 70px 0;
+    text-align: center;
+}
+.removal-attention-wrapper h3 {
+    font-size: 1.5em;
+    background-color: #fff;
+    margin: 0 auto 25px auto;
+    width: fit-content;
+    padding: 0 1em;
+
+}
+.removal-attention-wrapper p {
+    font-size: 0.875em;
+}
+.removal-attention-wrapper a {
+    padding: 12px 3.125em;
+    background-color: #fff;
+    border-radius: 100px;
+    border: #DCBBAB 1px solid;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+.removal-attention-container {
+    max-width: 1000px;
+    font-size: 0.875em;
+    margin: 30px auto 30px auto;
+    text-align: left;
+    background-color: #fff;
+    border: #A48A81 0.75px solid ;
+    padding: 30px 3em 15px 3em;
+    line-height: 20px;
+}
+.removal-attention-container p {
+    padding: 0 0 15px 0;
+}
+.removal-attention-container .dotted-line {
+    margin: 5px 0 20px 0;
+    border-bottom: 0.75px #1a1a1a dashed;
+}
+
+/* 丸を除いた左揃え        -------------------------------------- */
+.removal-attention-container span {
+    color: #DE8575;
+}
+/* /removal-attention */
+
+/* removal-flow-wrapper 
+.removal-flow-wrapper {
+    background-color: #E4D5CC;
+    padding: 60px 0;
+    text-align: center;
+}
+.removal-flow-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    align-items: center;
+    padding: 0 6.25em;
+    margin-top: 20px;
+}
+.removal-flow-wrapper h3 {
+    font-size: 2em;
+    padding: 0 0 20px 0;
+    letter-spacing: 0.3em;
+}
+.removal-flow-wrapper p {
+    font-size: 0.875em;
+    align-items: center;
+}
+.removal-flow-container p span {
+    font-size: 1.714em;
+    color: #fff;
+    padding: 0 5px 0 0;
+}
+.removal-flow-container img {
+    padding: 0 0 20px 0;
+    width: 200px;
+}
+.removal-flow-container div div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 45px 0;
+    gap: 10px;
+}
+
+.removal-flow-image-right {
+    margin: 0 25px 145px 0;
+    position: relative;
+}
+.removal-flow-image-right::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px #1a1a1a solid;
+    border-right: 1px #1a1a1a solid;
+    position: absolute;
+    rotate: -45deg;
+}
+*/
+/* /removal-flow-wrapper */
+
+/* removal-faq */
+.removal-faq-wrapper {
+    padding: 60px 0 80px 0;
+    text-align: center;
+}
+.removal-faq-wrapper h3 {
+    font-size: 2em;
+    padding: 0 0 20px 0;
+    letter-spacing: 0.3em;
+}
+.removal-faq-wrapper a {
+    border-bottom: 1px #1a1a1a solid;
+}
+/* /removal-faq */
+
+/* ////////////////////////
+    sp
+//////////////////////// */
+@media screen and (max-width: 1000px) {
+
+    .removal-content-wrapper,
+    .removal-menu-wrapper,
+    .removal-attention-wrapper,
+    .removal-flow-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .removal-flow-container {
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .removal-content-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    .removal-menu-list ul {
+        justify-content: center;
+
+    }
+    .removal-menu-list ul li {
+        text-align: center;
+
+    }
+
+    .removal-flow-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 80px;
+        padding: 0 20px;
+        gap: 0;
+    }
+    .removal-flow-container img {
+    }
+    .removal-flow-image-right::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-bottom: 1px #1a1a1a solid;
+        border-right: 1px #1a1a1a solid;
+        position: absolute;
+        rotate: -45deg;
+    }
+    .removal-flow-image-right {
+        margin: 0 0 60px 0;
+    }
+
+
+    .removal-flow-container div div {
+        padding: 10px 0;
+    }
+    .removal-flow-container img {
+        padding: 0;
+    }
+    .removal-flow-wrapper a {
+        margin: 20px auto 0 auto;
+    }
+    .removal-content-container {
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    .removal-content-container div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        max-width: 90%;
+        width: 100%;
+        padding-left: 15vw;
+    }
+    .removal-content-container div div {
+        padding: 0;
+    }
+    .permanent-hair-removal {
+        padding: 15px 1.4em;
+    }
+    .removal-menu-title {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 75px 0 10px 0;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .removal-flow-container {
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .removal-flow-container img {
+        width: 80px;
+    }
+}

@@ -1,0 +1,208 @@
+@charset "utf-8";
+.beauty-fv-wrapper{ /* ここ変える */
+    background-image: url(../images11/fv-beauty-bg.jpg); /* ここ変える */
+}
+/* /FV */
+
+.tattoo-content-wrapper {
+    background-color: #F8F7F6;
+    padding: 100px 0 0 0;
+}
+.tattoo-content-wrapper h3 {
+    font-size: 2em;
+    color: #A48A81;
+    border-bottom: 2px dashed #A48A81;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 45px;
+    padding: 0 0 15px 0;
+}
+.tattoo-content-container,
+.tattoo-content-can,
+.tattoo-content-cannot,
+.tattoo-flow-container,
+.tattoo-risk-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tattoo-content-container {
+    padding: 0 0 75px 0;
+}
+.tattoo-content-container p {
+    font-size: 0.875em;
+    line-height: 20px;
+    padding: 0 0 40px 0;
+}
+.tattoo-content-container h5 {
+    padding: 0 0 15px 0;
+}
+
+.tattoo-content-can,
+.tattoo-content-cannot {
+    background-color: #fff;
+    border: 2px #A48A81 solid;
+    padding: 40px 3.125em 10px;
+    margin-bottom: 40px;
+}
+.tattoo-content-can h4,
+.tattoo-content-cannot h4 {
+    font-size: 1.188em;
+    width: fit-content;
+    margin: 0 0 25px 0;
+}
+.tattoo-content-can h4 {
+    background: linear-gradient(180deg, #fff 0%, #fff 70%, #ECBBAF 70%, #ECBBAF 100%);
+}
+.tattoo-content-cannot h4 {
+    background: linear-gradient(180deg, #fff 0%, #fff 70%, #CCCCCC 70%, #CCCCCC 100%);
+}
+.tattoo-content-can h5,
+.tattoo-content-cannot h5 {
+    border-bottom: 1px #A48A81 solid;
+    width: fit-content;
+    padding: 0 0 5px 0;
+    margin: 0 0 13px 0;
+}
+.tattoo-content-can p,
+.tattoo-content-cannot p {
+    font-size: 0.875em;
+    margin: 0 0 40px 0;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.tattoo-flow-wrapper {
+    background-color: #F8F7F6;
+    padding: 60px 0 0 0;
+}
+.tattoo-flow-wrapper h4 {
+    font-size: 1.563em;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+.tattoo-flow-container div {
+    padding: 35px 2.813em;
+}
+.tattoo-flow-container h5 {
+    color: #DE8575;
+    font-size: 1.25em;
+    border-bottom: 1px #1a1a1a dashed;
+    padding: 0 0 10px 0;
+    margin: 0 0 20px 0;
+}
+.tattoo-flow-container p {
+    font-size: 0.875em;
+}
+.tattoo-flow-container div {
+    background-color: rgba(222, 206, 198, 0.1);
+}
+.tattoo-flow-container .tattoo-bg-1 {
+    background-color: rgba(222, 206, 198, 0.4);
+}
+.tattoo-flow-container span {
+    color: #DE8575;
+}
+.tattoo-flow-container a {
+    display: block;
+    font-size: 0.875em;
+    padding: 20px 0 0 0;
+}
+.tattoo-flow-container a::before {
+    content: url(../images/manual.png);
+    vertical-align: middle;
+    padding: 0 10px 0 0;
+}
+
+.tattoo-detail-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 0 90px 0;
+}
+.tattoo-detail-wrapper h4 {
+    font-size: 1.5625em;
+    padding-left: 20px;
+    padding-bottom: 2px;
+    border-left: 6px solid #000;
+    margin: 75px 0 0 0;
+}
+.tattoo-detail-wrapper p {
+    font-size: 0.875em;
+    line-height: 25px;
+}
+.tattoo-detail-container {
+    max-width: 890px;
+    margin: 0 auto;
+    padding: 26px 0 0 0;
+}
+.tattoo-detail-content {
+    padding: 24px 0 8px 0;
+    border-bottom: 1px #1a1a1a dashed;
+}
+.tattoo-detail-container h5 {
+    font-size: 0.875em;
+    color: #C7AF06;
+    padding: 0 0 15px 0;
+}
+.tattoo-detail-container p {
+    padding: 0 0 12px 0;
+}
+.tattoo-detail-flex {
+    display: flex;
+    gap: 2em;
+}
+
+
+
+.tattoo-risk-wrapper {
+    background-color: #F9DDD2;
+    padding: 55px 0 70px 0;
+}
+.tattoo-risk-wrapper h3 {
+    font-size: 1.438em;
+    background-color: #fff;
+    margin: 0 auto 45px auto;
+    text-align: center;
+    width: fit-content;
+}
+.tattoo-risk-container {
+    background-color: #fff;
+    border: 1px #A48A81 solid;
+    padding: 40px 3.125em;
+}
+.tattoo-risk-container h6 {
+    font-size: 0.875em;
+}
+.tattoo-risk-container p {
+    font-size: 0.875em;
+    padding: 30px 0 0 0;
+}
+.tattoo-risk-container span {
+    color: #DE8575;
+}
+
+.tattoo-content-wrapper,
+    .tattoo-flow-wrapper,
+    .tattoo-detail-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+/* ////////////////////////
+    sp
+//////////////////////// */
+@media screen and (max-width: 690px) {
+
+    .tattoo-content-wrapper,
+    .tattoo-flow-wrapper,
+    .tattoo-detail-wrapper,
+    .tattoo-risk-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .tattoo-content-wrapper h4 {
+        font-size: 2.8vw;
+    }
+    .tatto-pc-image {
+        display: none;
+    }
+}

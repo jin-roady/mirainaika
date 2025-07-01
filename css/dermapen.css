@@ -1,0 +1,227 @@
+@charset "utf-8";
+.beauty-fv-wrapper{ /* ここ変える */
+    background-image: url(../images11/fv-beauty-bg.jpg); /* ここ変える */
+}
+/* /FV */
+
+.dermapen-content-wrapper {
+    background-color: #F8F7F6;
+    padding: 70px 0 0 0;
+}
+.dermapen-content-wrapper h3 {
+    font-size: 2em;
+    color: #A48A81;
+    border-bottom: 2px dashed #A48A81;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 45px;
+    padding: 0 0 15px 0;
+}
+.dermapen-content-wrapper p {
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 25px;
+}
+.dermapen-content-container {
+    max-width: 1000px;
+    margin: 55px auto 0 auto;
+    padding: 40px 0 50px 0;
+    background-color: #fff;
+    border: 2px #A48A81 solid;
+}
+.dermapen-content-container h5 {
+    text-align: center;
+    font-size: 1.188em;
+    background: linear-gradient(180deg, #fff 0%, #fff 70%, #ECBBAF 70%, #ECBBAF 100%);
+    width: fit-content;
+    margin: 0 auto 22px auto;
+}
+.dermapen-content-table {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10em;
+}
+.dermapen-content-table p {
+    padding: 13px 0 0 0;
+}
+.dermapen-content-table p::before {
+    content: url(../images/check2.png);
+    vertical-align: middle;
+    padding: 0 1em 0 0;
+}
+.dermapen-point-wrapper {
+    background-color: #F8F7F6;
+    padding: 100px 0 0 0;
+}
+.dermapen-point-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.dermapen-point-container h3 {
+    font-size: 2em;
+    color: #A48A81;
+    border-bottom: 2px dashed #A48A81;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto 45px;
+    padding: 0 0 15px 0;
+}
+.dermapen-point-container p {
+    font-size: 0.875em;
+    line-height: 23px;
+    letter-spacing: 1px;
+}
+.dermapen-point-container span {
+    border-bottom: 0.5px #1a1a1a solid;
+}
+.dermapen-point-container a {
+    display: block;
+    font-size: 0.875em;
+    margin: 40px 0;
+}
+.dermapen-point-container a::before {
+    content: url(../images/manual.png);
+    vertical-align: middle;
+    padding: 0 10px 0 0;
+}
+.dermapen-point-container_mechanism {
+    background-color: #fff;
+    border: 2px #A48A81 solid;
+    padding: 40px 3.125em;
+}
+.dermapen-point-container_mechanism h5 {
+    text-align: left;
+    font-size: 1.188em;
+    background: linear-gradient(180deg, #fff 0%, #fff 70%, #ECBBAF 70%, #ECBBAF 100%);
+    width: fit-content;
+    margin: 0 0 20px 0;
+}
+.dermapen-point-container_mechanism-img{
+  text-align: center;
+}
+.dermapen-point-containe_text{
+  display: flex;
+  justify-content: center;
+  column-gap: 3.5em;
+}
+.drip-component-wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 85px 20px;
+}
+.drip-component-wrapper h4 {
+    font-size: 1.5625em;
+    padding-left: 20px;
+    padding-bottom: 2px;
+    border-left: 6px solid #000;
+    margin: 160px 0 0 0;
+}
+.pico-point-container div p {
+    line-height: 20px;
+}
+.dermapen-risk-wrapper {
+    background-color: #F9DDD2;
+    padding: 50px 0 1px 0;
+}
+.dermapen-risk-wrapper h3 {
+    font-size: 1.438em;
+    background-color: #fff;
+    width: fit-content;
+    margin: 0 auto 40px auto;
+}
+.dermapen-risk-container {
+    max-width: 1000px;
+    margin: 0 auto 70px auto;
+    padding: 35px 3.438em 10px 3.438em;
+    background-color: #fff;
+    border: 1px #A48A81 solid;
+}
+
+.dermapen-risk-container h6 {       
+    color: #DE8575;
+    padding: 10px 0 15px 0;
+}
+.dermapen-risk-container p {
+    font-size: 0.875em;
+    padding: 0 0 30px 0;
+    line-height: 23px;
+    letter-spacing: 1px;
+}
+.dermapen-cannot-text {
+    margin: -10px 0 25px 0;
+    text-align: center;
+}
+.dermapen-menu-wrapper {
+    background-color: #F8F7F6;
+    padding: 90px 0 90px 0;
+}
+.pico-menu-detail {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.pico-menu-detail h4 {
+    font-size: 1.5625em;
+    padding-left: 20px;
+    border-left: 6px solid #000;
+    margin-bottom: 40px;
+}
+.pico-menu-detail p {
+    font-size: 0.875em;
+    line-height: 27px;
+}
+.pico-menu-detail div {
+    max-width: 890px;
+    margin: 0 auto;
+}
+.pico-menu-detail h5 {
+    font-size: 0.875em;
+    color: #C7AF06;
+    margin: 15px 0 0 0;
+}
+.pico-menu-detail p {
+    border-bottom: #1a1a1a 1px dashed;
+    padding: 15px 0;
+}
+.pico-content-wrapper,
+    .pico-point-wrapper,
+    .pico-risk-wrapper{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+.docment-preview01 {
+background: url("../images/doui_bg02.svg");
+}
+/* ////////////////////////
+    sp
+//////////////////////// */
+@media screen and (max-width: 690px) {
+
+    .dermapen-content-wrapper,
+    .dermapen-point-wrapper,
+    .dermapen-risk-wrapper,
+    .dermapen-menu-wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .dermapen-content-container,
+    .dermapen-risk-container,
+    .dermapen-menu-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .dermapen-content-table {
+        padding: 0;
+        padding-left: 10vw;
+        flex-wrap: wrap;
+    }
+    .dermapen-menu-img {
+        flex-wrap: wrap;
+        padding: 50px 0;
+    }
+  .dermapen-point-container_mechanism {
+    padding: 20px 1.125em;
+  }
+  .dermapen-point-container_mechanism-img img{
+  width: 100%;
+}
+}

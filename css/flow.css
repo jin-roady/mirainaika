@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+.flow-of-treatment-fv-wrapper{
+    background-image: url(../images/fv-flow-of-treatment-bg@2x.jpg);
+}
+.flow-of-treatment-faq{
+    text-align: center;
+}
+.flow-of-treatment-faq a{
+    border-bottom: 1px solid #000;
+}
+.flow-of-treatment-step-wrapper{
+    margin-bottom: 130px;
+}
+.flow-of-treatment-step-wrapper h2{
+    border: #AF9182 solid 1px;
+    padding: 25px 0;
+    width: 430px;
+    max-width: 100%;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 1.5625em;
+    color: #AF9182;
+    box-shadow: 2px 2px 0 #AF9182;
+}
+.flow-of-treatment-step-wrapper .coral,
+.flow-of-treatment-notes-container .coral{
+    color: #DE8575;
+}
+.flow-of-treatment-step-wrapper dl{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 50px;
+}
+.flow-of-treatment-step-wrapper div dl{
+    background-color: rgba(222, 206, 198, 0.4);
+}
+.flow-of-treatment-step-wrapper div dl:nth-child(even){
+    background-color: rgba(222, 206, 198, 0.1);
+}
+.flow-of-treatment-step-wrapper dl dt{
+    color: #DE8575;
+    font-size: 1.25em;
+    border-bottom: #000 dashed 1px;
+    padding-bottom: 10px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.flow-of-treatment-step-wrapper dl dd p{
+    margin-bottom: 25px;
+}
+.flow-of-treatment-step-wrapper dl dd > div{
+    margin-top: 25px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.flow-of-treatment-step-wrapper dl dd div span{
+    display: block;
+}
+.flow-of-treatment-step-wrapper dl dd div:first-child span{
+    text-align: right;
+}
+
+.flow-of-treatment-step-wrapper dl img{
+    max-width: 400px;
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+}
+.flow-of-treatment-notes-wrapper{
+    background-color: rgba(249, 221, 210, 0.8);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.flow-of-treatment-notes-wrapper h3{
+    width: fit-content;
+    background-color: #fff;
+    font-size: 1.4375em;
+    padding: 2px 7px;
+    margin: 0 auto 30px;
+}
+.flow-of-treatment-notes-wrapper div > ul{
+    border: 1px solid #A48A81;
+    background-color: #fff;
+    max-width: 1000px;
+    margin: 0 auto 30px;
+    padding: 0 45px;
+}
+.flow-of-treatment-notes-wrapper ul li{
+    list-style: none;
+    padding: 25px 0;
+    border-bottom: 1px dashed #000;
+}
+.flow-of-treatment-notes-wrapper ul li::before{
+    content: "○";
+}
+.flow-of-treatment-notes-wrapper ul li ul li{
+    padding: 15px 0 0 1em;
+    border: none;
+}
+.flow-of-treatment-notes-wrapper ul li ul li::before{
+    content: "・";
+}
+.flow-of-treatment-notes-wrapper .dashed-non {
+    border-bottom: 0px;
+}

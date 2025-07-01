@@ -1,0 +1,42 @@
+@charset "utf-8";
+.beauty-fv-wrapper{ /* ここ変える */
+    background-image: url(../images11/fv-beauty-bg.jpg); /* ここ変える */
+}
+/* /FV */
+
+/* beauty-content */
+.yag-content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 90px 20px;
+}
+.yag-content-wrapper h4 {
+    font-size: 1.5625em;
+    padding-left: 20px;
+    padding-bottom: 2px;
+    border-left: 6px solid #000;
+    margin: 75px 0 50px 0;
+    letter-spacing: 3px;
+}
+.yag-content-wrapper p {
+    font-size: 0.875em;
+    line-height: 25px;
+}
+
+.yag-content-container {
+    max-width: 890px;
+    margin: 0 auto;
+    padding: 50px 0 0 0;
+}
+.yag-content-container div {
+    padding: 24px 0 8px 0;
+    border-bottom: 1px #1a1a1a dashed;
+}
+.yag-content-container h5 {
+    font-size: 0.875em;
+    color: #C7AF06;
+    padding: 0 0 15px 0;
+}
+.yag-content-container p {
+    padding: 0 0 12px 0;
+}

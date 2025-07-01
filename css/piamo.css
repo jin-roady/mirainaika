@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+/* FV背景 */
+.beauty-fv-wrapper {
+  background-image: url(../images11/fv-beauty-bg.jpg);
+}
+
+/* ピアモ紹介全体 */
+.piamo-wrapper {
+  background-color: #F8F7F6;
+  padding: 70px 20px;
+}
+
+.piamo-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 2px solid #A48A81;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+
+.piamo-container h3 {
+  font-size: 2em;
+  color: #A48A81;
+  border-bottom: 2px dashed #A48A81;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto 40px;
+  padding-bottom: 10px;
+}
+
+.piamo-container h4 {
+  font-size: 1.25em;
+  margin: 40px 0 15px;
+  color: #444;
+  border-left: 6px solid #A48A81;
+  padding-left: 12px;
+}
+
+.piamo-container h5 {
+  font-size: 1em;
+  margin: 20px 0 10px;
+  color: #666;
+}
+
+.piamo-container p,
+.piamo-container ul {
+  font-size: 0.95em;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.piamo-container ul {
+  padding-left: 1.2em;
+}
+
+.piamo-container ul li {
+  list-style: disc;
+}
+
+/* 料金表 */
+.piamo-price {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  font-size: 0.95em;
+}
+
+
+.piamo-price tbody td {
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+  .piamo-container {
+    padding: 25px 15px;
+  }
+  .piamo-container h3 {
+    font-size: 1.5em;
+  }
+  .piamo-container h4 {
+    font-size: 1.1em;
+  }
+  .piamo-container p,
+  .piamo-container ul {
+    font-size: 0.9em;
+  }
+  .piamo-price thead th,
+  .piamo-price tbody td {
+    font-size: 0.85em;
+  }
+}
+
+.piamo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+  }
+
+  .piamo-table th,
+  .piamo-table td {
+    border: 1px solid #ccc;
+    padding: 12px 16px;
+    text-align: left;
+  }
+
+  .piamo-table thead {
+    background-color: #f2f2f2;
+  }
+
+  @media screen and (max-width: 768px) {
+    .piamo-table th,
+    .piamo-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+
+  .piamo-recommend-section {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .piamo-recommend-section h4 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+
+  .piamo-device-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .piamo-device-image,
+  .piamo-applicator-image,
+  .piamo-heatcomparison-image,
+  .piamo-cello-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .piamo-applicator-section,
+  .piamo-heatcomparison-section {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .piamo-applicator-section h4,
+  .piamo-heatcomparison-section h4 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+
+  .piamo-heatcomparison-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .piamo-heatcomparison-images img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+
+  .piamo-caption {
+    font-size: 0.875em;
+    color: #555;
+    margin-top: 5px;
+  }
+
+  .piamo-consent-box {
+    background-color: #fdf8f4;
+    border: 1px solid #d8b9a2;
+    padding: 16px 20px;
+    margin: 30px 0;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .piamo-consent-box a {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: bold;
+    color: #a97463;
+    text-decoration: underline;
+  }
+
+  .piamo-section {
+    margin: 2rem auto;
+    max-width: 1000px;  
+    padding: 2em;
+    background-color: #f9f9f9;
+  }
+  
+  .piamo-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.7em;
+    color: #000000;
+    border-left: 6px solid #4fb8b0;
+    padding-left: 0.8em;
+  }
+  
+  .piamo-subheading {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    border-left: 4px solid #80cbc4;
+    padding-left: 0.6em;
+    background: #f0fdfa;
+  }
+  
+  
+  .piamo-text {
+    margin-bottom: 1em;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  .piamo-block {
+    margin-bottom: 2em;
+  }
+  
+  .piamo-applicator-image,
+  .piamo-cello-image,
+  .piamo-device-image {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+    display: block;
+  }
+  
+  .piamo-feature {
+    margin-top: 1em;
+    background: #fff;
+    padding: 1em;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .piamo-feature h6 {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+    color: #2b6f6e;
+  }
+  
+  .piamo-heatcomparison-images {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+    flex-wrap: wrap;
+  }
+  
+  .piamo-heatcomparison-images div {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .piamo-caption {
+    font-size: 0.9em;
+    margin-top: 0.3em;
+    color: #666;
+  }
+  
+  .piamo-frequency-section {
+    background-color: #f0fdfa;
+    padding: 1.2em;
+    margin: 2em 0;
+  }
+  
+  .piamo-frequency-title {
+    font-size: 1.6em;
+    color: #00796b;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .piamo-frequency-text {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  .piamo-interval-section {
+    margin: 2rem auto;
+    max-width: 1000px;
+    padding: 1rem;
+  }
+  
+  .piamo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .piamo-table thead {
+    background-color: #f2f7fb;
+  }
+  
+  .piamo-table th,
+  .piamo-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .piamo-table th {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .piamo-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  .piamo-table tbody tr:hover {
+    background-color: #f0f8ff;
+  }
+  

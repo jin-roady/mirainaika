@@ -1,0 +1,101 @@
+@charset "utf-8";
+.laser-fv-wrapper{
+    background-image: url(../images10/fv-laser-bg.jpg);
+}
+.laser-device-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #F8F7F6;
+}
+.laser-device-wrapper h4 {
+    font-size: 1.5625em;
+    padding-left: 20px;
+    border-left: 6px solid #000;
+    margin: 80px 0 45px 0;
+}
+
+.laser-device-container {
+
+}
+.laser-device-list {
+    display: flex;
+    gap: 5.625em;
+    padding: 0 0 30px 0;
+}
+.laser-device-list h5 {
+    font-size: 1.313em;
+    color: #C7AF06;
+    padding: 35px 0 35px 0;
+    line-height: 2em;
+}
+.laser-device-list p {
+    font-size: 0.875em;
+    line-height: 1.8em;
+    padding: 0 0 30px 0;
+}
+.laser-device-list img {
+    padding: 0 0 45px 0;
+}
+.laser-device-list a {
+    display: block;
+    font-size: 0.875em;
+    border-bottom: 0.5px #1a1a1a solid;
+    width: 15em;
+    padding: 0 0 5px 0;
+    margin: 0 0 15px 0;
+    position: relative;
+}
+.laser-device-list a::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    margin-top: -5px;
+    border-top: solid 1px #1a1a1a;   /* 好みで色を変えてください */  
+    border-right: solid 1px #1a1a1a;   /* 好みで色を変えてください */  
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.laser-device-list-a {
+    width: fit-content !important;
+    padding-right: 1.8em !important;
+}
+.laser-device-list span {
+    color: #DE8575;
+}
+/* ////////////////////////
+    tablet
+//////////////////////// */
+@media screen and (max-width: 960px) {
+    .laser-device-container {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .laser-device-container a {
+        text-align: left;
+    }
+    .laser-device-list {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto 50px auto;
+        padding: 0;
+        gap: 0;
+    }
+    .laser-device-list p {
+        text-align: left;
+    }
+    .laser-link-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 20px;
+    }
+    .laser-device-list img {
+        padding: 0;
+    }
+    .laser-device-list-reverse {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+}

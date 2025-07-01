@@ -1,0 +1,131 @@
+@charset "utf-8";
+.doctors-fv-wrapper{
+    background-image: url(../images7/fv-doctors-bg@2x.jpg);
+}
+
+/* doctors */
+.doctors-wrapper {
+    background-color: F8F7F6;
+	margin-bottom: 30px;
+}
+.doctors-title {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.doctors-title h3 {
+    text-align: center;
+    padding: 60px 0 50px 0;
+    font-size: 2em;
+    letter-spacing: 0.3em;
+}
+.doctors-title p {
+    text-align: left;
+    font-size: 0.875em;
+    line-height: 20px;
+}
+.doctors-item-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.doctors-item-wrapper h4 {
+    font-size: 1.5em;
+    margin: 75px 0 35px 0;
+}
+.doctors-item-wrapper h4 a {
+    border-bottom: 0.5px #000 solid;
+    width: fit-content;
+}
+.doctors-item-wrapper h4::before {
+    content: "";
+    border-left: 6px solid #000;
+    padding-right: 20px;
+}
+.doctors-item-wrapper h4 span {
+    font-size: 0.625em;
+    padding: 0 0 0 0.8em;
+}
+.doctors-item-container {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex: 1;
+    gap: 3.75em;
+}
+.doctors-item-container img {
+    margin: 40px 0 10px 0;
+    width: 200px;
+}
+.doctors-item-container .item-name {
+    padding: 0 0 10px 0;
+}
+.doctors-item-container a {
+    display: block;
+    font-size: 1em;
+}
+.doctors-item-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 0 0;
+}
+
+/* /doctors */
+
+/* ////////////////////////
+    tablet
+//////////////////////// */
+@media screen and (max-width: 960px) {
+    .doctors-item-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+}
+@media screen and (max-width: 690px) {
+    .doctors-item-container {
+        margin: 0 auto;
+    }
+    .doctors-item-price {
+        justify-content: space-between;
+    }
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0 5px;
+    word-break: break-word;
+  }
+  
+  .item-name .sub-item {
+    font-size: 13px;
+    display: block;
+    margin-top: 4px;
+    line-height: 1.4;
+    color: #555; /* 任意のやや薄めの色で構成情報の視認性をUP */
+  }
+  
+  .doctors-item-container > div {
+    width: 23%;
+    margin: 1%;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .doctors-item-container > div {
+      width: 48%;
+      margin: 1% 1%;
+    }
+  
+    .item-name {
+      font-size: 13px;
+    }
+  
+    .item-name .sub-item {
+      font-size: 12px;
+    }
+  }
+  
