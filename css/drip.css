@@ -202,6 +202,37 @@
     margin: 40px 0 0 0;
 }
 
+.drip-vitamin-yellow {
+    padding: 0 0 0 5px;
+    margin: 40px 0 0 0;
+    font-size: 0.875em;
+    line-height: 1.8; /* 読みやすさ向上 */
+  }
+  
+  .drip-vitamin-yellow span {
+    color: #C7AF06;
+    font-size: 1.071em;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  
+  .drip-vitamin-yellow > div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #1a1a1a;
+    padding: 12px 0;
+    margin-bottom: 5px;
+  }
+  
+  .drip-vitamin-yellow > p {
+    margin: 20px 0 8px;
+  }
+  
+  .drip-vitamin-yellow > div:last-of-type {
+    margin-bottom: 30px;
+  }
+  
 .drip-times-wrapper {
     background-color: #F8F7F6;
     padding: 80px 20px 60px 20px;
