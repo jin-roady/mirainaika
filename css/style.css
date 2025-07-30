@@ -462,9 +462,6 @@ body {
     gap: 3.125em;
     justify-content: center;
 }
-.docment-preview { /*画像ががびってるの気になる*/
-    box-shadow: 4px 4px 5px rgba(241, 204, 192, 0.75);
-}
 /* /document
 ----------------- */
 

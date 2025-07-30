@@ -352,3 +352,32 @@
     max-width: 100%;
     height: auto;
 }
+.drip-note {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 8px;
+  }
+  .drip-note a {
+    text-decoration: underline;
+    color: #5a8dee;
+  }
+  
+  .drip-link-to-consent {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.drip-consent-link {
+    display: inline-block;
+    background: #5cb6a5; /* 既存カラーに合わせ調整 */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.drip-consent-link:hover {
+    background: #4aa394;
+}
