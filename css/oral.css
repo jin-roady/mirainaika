@@ -89,3 +89,22 @@
 .note-oral-custom .note-oral-link:hover {
     opacity: 0.8;              /* hoverエフェクト */
 }
+
+.caution-list {
+    margin-top: 20px;       /* 上に余白 */
+    padding: 15px 20px;     /* 内側余白 */
+    background-color: #fff8e1; /* 薄い黄色背景 */
+    border: 1px solid #f0d98c; /* 枠線 */
+    border-radius: 6px;     /* 角丸 */
+    font-size: 14px;        /* 少し小さめ文字 */
+    line-height: 1.6;       /* 行間 */
+  }
+  
+  .caution-list li {
+    margin-bottom: 8px;     /* 各項目の間隔 */
+  }
+  
+  .caution-list li:last-child {
+    margin-bottom: 0;       /* 最後の項目の余白をなくす */
+  }
+  
