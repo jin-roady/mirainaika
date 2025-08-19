@@ -107,4 +107,54 @@
   .caution-list li:last-child {
     margin-bottom: 0;       /* 最後の項目の余白をなくす */
   }
+  .note-oral-link-blue {
+    color: #007bff;          /* 標準の青色 */
+    text-decoration: underline; /* 下線でリンク感を出す */
+    cursor: pointer;
+  }
+  
+  .note-oral-link-blue:hover {
+    color: #0056b3;          /* ホバー時に濃い青 */
+    text-decoration: none;   /* ホバー時に下線を消す（好みに応じて変更可） */
+  }
+  .note-oral-link-blue {
+    display: inline !important;           /* 横並び強制 */
+    padding: 0 !important;                /* 余白リセット強制 */
+    margin: 0 !important;                 /* 余白リセット強制 */
+    border: none !important;              /* 枠線強制削除 */
+    background: none !important;          /* 背景強制削除 */
+    color: #007bff !important;            /* 青文字強制 */
+    text-decoration: underline !important; /* 下線強制 */
+    cursor: pointer !important;
+  }
+  
+  .note-oral-link-blue:hover {
+    color: #0056b3 !important;            /* ホバー時の濃い青強制 */
+    text-decoration: none !important;
+  }
+  .note-oral-text {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #333; /* 本文色 */
+  }
+  
+  .note-oral-link-blue {
+    display: inline !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    background: none !important;
+    color: #007bff !important;
+    text-decoration: underline !important;
+    cursor: pointer !important;
+  
+    /* 矢印や装飾の強制削除 */
+    background-image: none !important;
+  }
+  
+  .note-oral-link-blue::after {
+    content: none !important; /* 擬似要素で矢印を消す */
+  }
   

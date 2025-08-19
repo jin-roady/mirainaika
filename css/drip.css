@@ -381,3 +381,14 @@
 .drip-consent-link:hover {
     background: #4aa394;
 }
+
+.price-row {
+    display: flex;
+    justify-content: space-between; /* 左右に配置 */
+    align-items: center;            /* 縦中央に揃える */
+  }
+  
+  .price {
+    white-space: nowrap;            /* 改行させない */
+  }
+  
