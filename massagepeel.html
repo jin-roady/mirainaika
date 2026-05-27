@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>みらい内科クリニック | マッサージピール</title>
+	<meta name="description" content="みらい内科クリニックのマッサージピール（PRX-T33）治療についてご紹介しています。高濃度トリクロロ酢酸・過酸化水素・コウジ酸配合のケミカルピーリングで、ハリ・ツヤ・毛穴・くすみの改善に適した治療です。">
+	<link rel="icon" type="image/svg+xml" href="images/favicon-2.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/scroll.css">
+	<link rel="stylesheet" href="css/news.css">
+	<link rel="stylesheet" href="css/faq.css">
+	<link rel="stylesheet" href="css/flow.css">
+	<link rel="stylesheet" href="css/removal.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/drip.css">
+	<link rel="stylesheet" href="css/beauty.css">
+	<link rel="stylesheet" href="css/yag.css">
+	<link rel="stylesheet" href="css/tattoo.css">
+	<link rel="stylesheet" href="css/accordion.css">
+	<link rel="stylesheet" href="css/addition.css">
+	<link rel="stylesheet" href="css/dermapen.css">
+
+	<style>
+		/* =============================================
+		   マッサージピール: 余白統一 & 横スクロール修正
+		   セクション間の統一余白 = 60px
+		   ============================================= */
+
+		/* 横スクロール防止 */
+		html, body {
+			overflow-x: hidden;
+		}
+		*, *::before, *::after {
+			box-sizing: border-box;
+		}
+
+		/* --- こんなお悩みの方に --- */
+		.dermapen-content-wrapper {
+			padding: 60px 20px 60px;
+		}
+		.dermapen-content-container {
+			margin-top: 35px;
+		}
+		.dermapen-content-table {
+			padding: 0 3em;
+		}
+
+		/* --- マッサージピールとは --- */
+		.dermapen-point-wrapper {
+			padding: 60px 20px 60px;
+		}
+		.dermapen-point-container h3 {
+			margin-bottom: 30px;
+		}
+
+		/* --- 成分 / ホームケア製品 --- */
+		.drip-component-wrapper {
+			padding: 60px 20px;
+			max-width: 900px;
+		}
+		.drip-component-wrapper h4 {
+			margin: 0 0 25px 0;
+		}
+		.drip-component-container {
+			margin-bottom: 25px;
+		}
+		.drip-component-container:last-child {
+			margin-bottom: 0;
+		}
+
+		/* --- 施術の流れ --- */
+		.tattoo-flow-wrapper {
+			padding: 60px 20px 60px;
+		}
+		.tattoo-flow-wrapper h4 {
+			margin-bottom: 25px;
+		}
+		.tattoo-flow-container div {
+			padding: 20px 25px;
+		}
+
+		/* --- 施術詳細 --- */
+		.drip-component-wrapper .pico-menu-detail {
+			margin-top: 0;
+		}
+		.pico-menu-detail h4 {
+			margin-bottom: 20px;
+		}
+		.pico-menu-text h5 {
+			margin-top: 15px;
+		}
+
+		/* --- 施術が受けられない方 / 注意点 --- */
+		.dermapen-risk-wrapper {
+			padding: 50px 0 1px 0;
+		}
+		.dermapen-risk-wrapper + .dermapen-risk-wrapper {
+			padding-top: 40px;
+		}
+		.dermapen-risk-container {
+			margin-bottom: 40px;
+		}
+
+		/* --- 価格表 --- */
+		.beauty-price-wrapper {
+			padding: 60px 20px;
+		}
+
+		/* --- MENU --- */
+		.beauty-menu-wrapper {
+			padding: 60px 20px;
+		}
+
+		/* --- 商品画像 --- */
+		.dermeden-hero-img {
+			display: block;
+			max-width: 480px;
+			width: 100%;
+			height: auto;
+			margin: 25px auto 30px;
+			border-radius: 6px;
+		}
+		.dermeden-product-img {
+			display: block;
+			max-width: 360px;
+			width: 100%;
+			height: auto;
+			margin: 20px auto 25px;
+			border-radius: 6px;
+		}
+
+		/* ========================
+		   レスポンシブ (SP)
+		   ======================== */
+		@media screen and (max-width: 690px) {
+			.dermapen-content-wrapper,
+			.dermapen-point-wrapper,
+			.tattoo-flow-wrapper,
+			.drip-component-wrapper,
+			.dermapen-risk-wrapper,
+			.beauty-price-wrapper,
+			.beauty-menu-wrapper {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+
+			.dermapen-content-table {
+				padding: 0 15px;
+				flex-direction: column;
+			}
+
+			.dermapen-risk-container {
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+
+			.tattoo-flow-container div {
+				padding: 15px 20px;
+			}
+
+			.conponent-name h6 {
+				overflow-wrap: break-word;
+				word-wrap: break-word;
+				font-size: 0.85em;
+			}
+			.drip-component-wrapper {
+				overflow: hidden;
+			}
+			.drip-component-container {
+				overflow: hidden;
+			}
+
+			.dermapen-risk-wrapper {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+
+			.beauty-menu-container-content {
+				max-width: 100%;
+			}
+			.beauty-menu-title {
+				padding: 25px 20px;
+			}
+
+			.dermapen-content-wrapper,
+			.dermapen-point-wrapper,
+			.tattoo-flow-wrapper,
+			.beauty-price-wrapper,
+			.beauty-menu-wrapper {
+				padding-top: 45px;
+				padding-bottom: 45px;
+			}
+			.drip-component-wrapper {
+				padding-top: 45px;
+				padding-bottom: 45px;
+			}
+			.dermapen-risk-wrapper {
+				padding-top: 30px;
+			}
+
+			.dermeden-hero-img,
+			.dermeden-product-img {
+				max-width: 100%;
+				margin: 20px auto;
+			}
+		}
+	</style>
+
+	<!-- Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header class="fv-wrapper beauty-fv-wrapper">
+		<div class="moyou">
+			<div class="migiue">
+			</div>
+			<div class="hidarisita">
+			</div>
+		</div>
+		<nav class="text2 en">
+			<ul class="header-menu">
+				<li><a href="index.html">TOP</a></li>
+				<li class="has-child" ontouchstart=""><a>MENU</a>
+					<ul>
+						<li class="has-child" ontouchstart=""><a>医療脱毛</a>
+							<ul>
+								<li><a href="removal.html">医療脱毛について</a></li>
+								<li><a href="removal.html#removal-price">料金表</a></li>
+							</ul>
+							<span></span>
+						</li>
+						<li class="has-child" ontouchstart=""><a>美肌治療</a>
+							<ul>
+								<li><a href="beauty.html">美肌治療について</a></li>
+								<li><a href="beauty.html#beauty-price">料金表</a></li>
+							</ul>
+							<span></span>
+						</li>
+						<li><a href="drip.html">点滴療法</a></li>
+						<li><a href="doctors.html">ドクターズコスメ</a></li>
+						<li><a href="oral.html">内服療法</a></li>
+						<li><a href="aga-ed.html">AGA/ED</a></li>
+					</ul>
+				</li>
+				<li><a href="flow.html">FLOW</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+			</ul>
+		</nav>
+		<div class="fv-container">
+			<img src="images11/fv-beauty-logo.svg" alt="logo">
+		</div>
+	</header>
+
+	<section class="dermapen-point-wrapper">
+		<div class="dermapen-point-container">
+			<h3>マッサージピール</h3>
+			<img src="images_massagepeel/prx-t33.jpg" alt="PRX-T33 マッサージピール薬剤" class="dermeden-hero-img">
+			<p>マッサージピールとは、イタリア製のPRX-T33という薬剤を使用したケミカルピーリングです。高濃度トリクロロ酢酸（TCA）と、低濃度過酸化水素（H2O2）、コウジ酸が配合されています。<br>加齢などで乱れたターンオーバーを整えるほか、真皮層に存在する線維芽細胞を活性化させる作用を持ちます。コラーゲン生成が促進され、肌質の改善やハリ感が実感できます。
+			</p>
+		</div>
+	</section>
+
+	<section class="dermapen-content-wrapper">
+		<div class="dermapen-content-container">
+			<h5>こんなお悩みの方に</h5>
+			<div class="dermapen-content-table">
+				<div>
+					<p>肌のハリ、ツヤを高めたい方</p>
+					<p>小ジワ、たるみを改善したい方</p>
+				</div>
+				<div>
+					<p>毛穴の黒ずみが気になる方</p>
+					<p>肌のくすみが気になる方</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="tattoo-flow-wrapper">
+		<div class="tattoo-flow-container">
+			<h4>施術の流れ</h4>
+			<div class="tattoo-bg-1">
+				<h5>1.カウンセリング</h5>
+				<p>気になる症状や部位をお伺いします。ご不明な点や不安なことがありましたら、遠慮せずにお聞きください。</p>
+			</div>
+			<div>
+				<h5>2.クレンジング・洗顔</h5>
+				<p>化粧品や日焼け止めなどを落としていただきます。</p>
+			</div>
+			<div class="tattoo-bg-1">
+				<h5>3.施術</h5>
+				<p>PRX-T33を皮膚に塗布し、マッサージをしながら揉みこみ浸透させます。</p>
+			</div>
+			<div>
+				<h5>4.施術後</h5>
+				<p>保湿して終了です。メイクは当日から可能です。</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="drip-component-wrapper">
+		<div class="pico-menu-detail">
+			<h4>施術詳細・注意事項・副作用・リスクなど</h4>
+			<div class="pico-menu-text">
+				<h5>施術間隔</h5>
+				<p>効果を維持、継続させるためには定期的（1〜3週間に1回、5回程度）に施術を行うことをおすすめしています。</p>
+				<h5>施術時間</h5>
+				<p>1回の治療時間は30分程度（洗顔時間は含みません）</p>
+				<h5>副作用・リスク</h5>
+				<p>施術中、若干の火照りや、ピリピリとした刺激を感じることがあります。ふき取り後は、消失します。<br>施術後、赤みやかゆみ、乾燥がでることがあります。通常、赤みは1〜2日以内に治まりますが、1週間程度かかることもあります。その間は、アルコール成分入りのスキンケア、スクラブ剤などは使用できません。<br>治療後、2〜3日後に薄く皮むけを起こす場合があります。<br>施術後は、激しい運動やサウナ、温泉の利用を控えてください。これらは体温を上昇させ、施術後の腫れや赤みを悪化させる可能性があります。2日程度は安静にしてください。</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="drip-component-wrapper">
+		<h4>ホームケア製品（WiQo）</h4>
+		<div class="drip-component-container">
+			<div class="conponent-name">
+				<h6>・WiQo スムージングフェイスフルイド</h6>
+				<div>
+					<p class="conponent-name-tag1">美容液</p>
+					<p class="conponent-name-tag2">グリコール酸</p>
+				</div>
+			</div>
+			<img src="images_massagepeel/smoothing-fluid.jpg" alt="WiQo スムージングフェイスフルイド" class="dermeden-product-img">
+			<p>どんな肌タイプにも適したダーマコスメティック製品で、若くインピュアな肌にも老化の進んだ肌にも推奨できる製品です。男性の肌にも使用でき、シワの深さを改善します。5.6%のグリコール酸を、肌に良いバランスで配合しています。pH値が約3と低いにもかかわらず、どんな肌タイプに対しても忍容性が良好で、灼熱感が生じることはありません。</p>
+			<p>【使用上の注意】使用開始時は少量を1日おきに塗布します。炎症のある肌には使用しないでください。グリコール酸を配合しています。目に入らないよう注意し、万一、目に入った場合は水で洗い流してください。子供には使用しないでください。</p>
+			<p>美容液（30ml）9,900円</p>
+		</div>
+		<div class="drip-component-container">
+			<div class="conponent-name">
+				<h6>・WiQo ドライスキンフェイスクリーム</h6>
+				<div>
+					<p class="conponent-name-tag1">保湿</p>
+					<p class="conponent-name-tag2">バリア回復</p>
+				</div>
+			</div>
+			<img src="images_massagepeel/dry-skin-cream.jpg" alt="WiQo ドライスキンフェイスクリーム" class="dermeden-product-img">
+			<p>ハリを失ったり、加齢や寒さ、風といった外気の影響を受けたりした肌の皮脂膜を回復させます。特に、外来でピーリングを受けた後は皮膚の保護膜が失われるため、このクリームが必要となります。本品は、保護膜を回復することにより、乾燥、皮膚のかゆみ、発赤、ひび割れの原因となる皮膚からの蒸散を防ぎます。本有効成分は、皮膚のヒアルロン酸分解を抑制し、フィラーやバイオリバイタライジング製品の持続時間を延長するほか、経年的老化や光加齢によるダメージを軽減します。</p>
+			<p>保湿クリーム（50ml）11,000円</p>
+		</div>
+		<div class="drip-component-container">
+			<div class="conponent-name">
+				<h6>・WiQo リバースセラム</h6>
+				<div>
+					<p class="conponent-name-tag1">美容液</p>
+				</div>
+			</div>
+			<p>リバースセラム（20ml）8,800円</p>
+		</div>
+	</section>
+
+	<section class="dermapen-risk-wrapper">
+		<h3>施術が受けられない方</h3>
+		<div class="dermapen-risk-container">
+			<p>
+				◯18歳未満の方<br>◯妊娠中またはその可能性がある方<br>◯施術部位に炎症、皮膚疾患、ヘルペスのある方<br>◯コウジ酸にアレルギーのある方<br>◯日焼けをしている方<br>◯過度の敏感肌、乾燥肌の方<br>◯1週間以内にトレチノイン、3日以内にハイドロキノンを使用している方
+			</p>
+		</div>
+	</section>
+
+	<section class="dermapen-risk-wrapper">
+		<h3>注意点</h3>
+		<div class="dermapen-risk-container">
+			<p>
+				◯アートメイク部位は色が薄くなる可能性があります。
+			</p>
+		</div>
+	</section>
+
+	<section class="document-wrapper">
+		<h3>マッサージピールを希望される方へ</h3>
+		<p>施術前にご記入頂く用紙です。<br>事前にご同意・ご記入頂いた上でご来院頂くと受付けがスムーズです。</p>
+		<div class="docment-container">
+			<a href="document/psform.pdf" class="docment-preview01">
+				<p class="p01">自由診療問診票<br>美肌治療問診票</p>
+				<div class="arrow"><img src="images/arrow01.svg" alt=""></div>
+			</a>
+			<a href="document/__________0.pdf" class="docment-preview02">
+				<p class="p01">20歳未満の方<br>保護者の承諾が必要です。<br>保護者同意書</p>
+				<div class="arrow"><img src="images/arrow01.svg" alt=""></div>
+			</a>
+		</div>
+	</section>
+
+	<section class="beauty-price-wrapper" id="massagepeel-price">
+		<div class="beauty-price-container">
+			<h3>マッサージピール価格表</h3>
+			<h6>※1回ごと、税込価格です</h6>
+			<div class="beauty-price-list">
+				<div class="accordion">
+					<div class="option">
+						<input type="checkbox" id="toggle-mp1" class="toggle" checked>
+						<label class="title" for="toggle-mp1">マッサージピール 施術料金</label>
+						<div class="content">
+							<div class="content-wrapper">
+								<div>
+									<p>・全顔</p>
+									<p>円</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="option">
+						<input type="checkbox" id="toggle-mp2" class="toggle">
+						<label class="title" for="toggle-mp2">ホームケア製品（WiQo）</label>
+						<div class="content">
+							<div class="content-wrapper">
+								<div>
+									<p>・スムージングフェイスフルイド（30ml）</p>
+									<p>9,900円</p>
+								</div>
+								<div>
+									<p>・ドライスキンフェイスクリーム（50ml）</p>
+									<p>11,000円</p>
+								</div>
+								<div>
+									<p>・リバースセラム（20ml）</p>
+									<p>8,800円</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="beauty-menu-wrapper">
+		<h3>MENU</h3>
+
+		<a href="velvetbeam.html" class="beauty-menu-container">
+			<div class="beauty-menu-container-content">
+				<div class="beauty-menu-title">
+					<h5>ヴェルベットビーム</h5>
+					<div>
+						<img src="images11/price.svg" alt="価格帯">
+						<p>料金はお問い合わせください</p>
+					</div>
+					<div>
+						<img src="images11/trouble.svg" alt="お悩み">
+						<p>くすみ、肝斑、シミ、色ムラ、ハリ・ツヤ、透明感</p>
+					</div>
+				</div>
+				<div class="beauty-menu-more">
+					<p>more</p>
+				</div>
+			</div>
+		</a>
+
+		<a href="reversepeel.html" class="beauty-menu-container">
+			<div class="beauty-menu-container-content">
+				<div class="beauty-menu-title">
+					<h5>リバースピール</h5>
+					<div>
+						<img src="images11/price.svg" alt="価格帯">
+						<p>料金はお問い合わせください</p>
+					</div>
+					<div>
+						<img src="images11/trouble.svg" alt="お悩み">
+						<p>肝斑、色素沈着、シミ、くすみ、ニキビ跡</p>
+					</div>
+				</div>
+				<div class="beauty-menu-more">
+					<p>more</p>
+				</div>
+			</div>
+		</a>
+
+		<a href="dermeden.html" class="beauty-menu-container">
+			<div class="beauty-menu-container-content">
+				<div class="beauty-menu-title">
+					<h5>ダームエデンプロ</h5>
+					<div>
+						<img src="images11/price.svg" alt="価格帯">
+						<p>料金はお問い合わせください</p>
+					</div>
+					<div>
+						<img src="images11/trouble.svg" alt="お悩み">
+						<p>肝斑、シミ、くすみ、色素沈着、ニキビ跡の色素沈着</p>
+					</div>
+				</div>
+				<div class="beauty-menu-more">
+					<p>more</p>
+				</div>
+			</div>
+		</a>
+	</section>
+
+	<!-- ここから同じ -->
+	<section class="reserve-wrapper">
+		<h3 class="en">RESERVE</h3>
+		<h6>ご予約はお電話にて受け付けています。<br>ご予約・ご質問への電話対応は、診察時間内のみ受け付けております。</h6>
+		<a href="tel:0858271145" class="tel-img"><img src="images/tel.svg" alt="電話番号"></a>
+		<div>
+			<dl>
+				<dt>月曜〜水曜・金曜</dt>
+				<dd>9:00~12:30 / 15:00~17:30</dd>
+			</dl>
+			<dl>
+				<dt>木曜・土曜</dt>
+				<dd>9:00~12:30</dd>
+			</dl>
+		</div>
+		<section class="reserve-wrapper-SNS">
+			<div>
+				<h2 class="reserve-wrapper-instagram">Instagram</h2>
+				<a href="http://www.instagram.com/mirai_medicalclinic/"><img src="images19/Instagram.png" width="40"
+						alt="インスタグラム"></a>
+			</div>
+
+			<div>
+				<h2 class="reserve-wrapper-instagram">LINE</h2>
+				<a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=053avjnr"><img src="images19/LINE.png"
+						width="40" alt="ライン"></a>
+			</div>
+
+		</section>
+		<a href="https://ssc3.doctorqube.com/mirai-clinic/" class="line-img">
+			<img src="images19/banner_line.png" alt="ライン登録">
+		</a>
+	</section>
+
+	<section class="access-wrapper">
+		<div class="access-container">
+			<a href="index.html" class="logo-img"><img src="images/logo.svg" alt="ロゴ"></a>
+			<dl>
+				<dt>住所</dt>
+				<dd>〒682-0806<br>鳥取県倉吉市昭和町2丁目233</dd>
+			</dl>
+			<dl>
+				<dt>電話番号</dt>
+				<dd>0858-27-1144<br>0858-27-1145(美容専用)</dd>
+			</dl>
+			<dl>
+				<dt>診療時間</dt>
+				<dd>午前 9:00~12:30<br>午後 15:00~18:00<p>※木曜・土曜は午前のみ</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>休診日</dt>
+				<dd>日曜・祝日</dd>
+			</dl>
+			<dl>
+				<dt>設備</dt>
+				<dd>駐車場あり</dd>
+			</dl>
+			<a href="" class="time"><img src="images/zikan.svg" alt="営業時間"></a>
+		</div>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13003.028234325842!2d133.8376577!3d35.4360477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3555d9d5740814b1%3A0x6b838d551ee417e0!2z44G_44KJ44GE5YaF56eR44Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2sjp!4v1675225084098!5m2!1sja!2sjp"
+			width="600" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+
+	<section class="sitemap-wrapper">
+		<div class="sitemap-title">
+			<div></div>
+			<h3 class="en">Sitemap</h3>
+		</div>
+		<div class="sitemap-wrapper-flex">
+			<div class="sitemap-container">
+				<div>
+					<a href="index.html" class="sitemap">TOP</a>
+					<a href="removal.html" class="sitemap">医療脱毛</a>
+					<a href="beauty.html" class="sitemap">美肌治療</a>
+				</div>
+				<div>
+					<a href="drip.html" class="sitemap">点滴療法</a>
+					<a href="doctors.html" class="sitemap">コスメ</a>
+					<a href="oral.html" class="sitemap">内服治療</a>
+				</div>
+				<div>
+					<a href="aga-ed.html" class="sitemap">AGA・ED</a>
+					<a href="laser.html" class="sitemap">レーザー機器</a>
+				</div>
+			</div>
+			<a href="https://mirai-clinic.info/" class="sitemap-link"><button>クリニック本サイトはこちら</button></a>
+		</div>
+	</section>
+
+	<footer class="en">
+		<small>
+			Copyright 2023 Mirai Medical Clinic All rights reserved.
+		</small>
+	</footer>
+
+</body>
+
+</html>

@@ -141,6 +141,12 @@ a.about-image img {
     height: auto;
     padding: 0;
   }
+  .search-wrapper .search-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px auto 0;
+    padding: 0 20px;
+  }
   .about-wrapper {
     background-image: url(../images/about-background.png);
     background-size: cover;

@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<title>みらい内科クリニック | お悩み別治療</title>
+	<meta name="description" content="みらい内科クリニックのお悩み別治療メニューをご紹介しています。シミ、ニキビ、肝斑、くすみ、タトゥー除去、たるみ、しわ、毛穴、赤ら顔など。">
+	<link rel="icon" type="image/svg+xml" href="images/favicon-2.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/scroll.css">
+	<link rel="stylesheet" href="css/news.css">
+	<link rel="stylesheet" href="css/faq.css">
+	<link rel="stylesheet" href="css/flow.css">
+	<link rel="stylesheet" href="css/removal.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/beauty.css">
+	<link rel="stylesheet" href="css/accordion.css">
+	<link rel="stylesheet" href="css/addition.css">
+
+	<!-- Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap"
+		rel="stylesheet">
+
+	<style>
+		/* サイドナビゲーション */
+		.trouble-sidenav {
+			position: fixed;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%);
+			z-index: 100;
+			background: rgba(255, 255, 255, 0.95);
+			border-radius: 10px;
+			padding: 15px 12px;
+			box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 0.4s;
+		}
+
+		.trouble-sidenav.is-visible {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		.trouble-sidenav a {
+			display: block;
+			font-size: 0.688em;
+			color: #906f64;
+			text-decoration: none;
+			padding: 8px 10px;
+			border-left: 2px solid transparent;
+			transition: border-color 0.3s, color 0.3s;
+			line-height: 1.3;
+		}
+
+		.trouble-sidenav a:hover,
+		.trouble-sidenav a.active {
+			border-left-color: #906f64;
+			color: #1A1A1A;
+			font-weight: 500;
+		}
+
+		/* メインコンテンツ */
+		.trouble-section {
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 80px 20px 0;
+		}
+
+		.trouble-section h3 {
+			font-size: 1.625em;
+			color: #906f64;
+			border-bottom: 2px dashed #906f64;
+			padding-bottom: 10px;
+			margin-bottom: 20px;
+			letter-spacing: 0.15em;
+		}
+
+		.trouble-section h4 {
+			font-size: 1.125em;
+			color: #906f64;
+			margin: 28px 0 10px;
+		}
+
+		.trouble-section .trouble-desc {
+			font-size: 0.875em;
+			line-height: 1.8;
+			margin-bottom: 20px;
+		}
+
+		.trouble-treatment-title {
+			font-size: 0.875em;
+			font-weight: 500;
+			color: #906f64;
+			margin: 18px 0 12px;
+		}
+
+		.trouble-links {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 12px;
+			margin-bottom: 40px;
+		}
+
+		.trouble-links a {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			font-size: 0.875em;
+			padding: 12px 2em;
+			border: 0.75px #1a1a1a solid;
+			border-radius: 100px;
+			text-decoration: none;
+			color: #1A1A1A;
+			transition: background-color 0.3s, color 0.3s;
+			position: relative;
+		}
+
+		.trouble-links a::after {
+			content: "\2192";
+			font-size: 0.9em;
+			transition: transform 0.3s;
+		}
+
+		.trouble-links a:hover {
+			background-color: #906f64;
+			color: #fff;
+		}
+
+		.trouble-links a:hover::after {
+			transform: translateX(3px);
+		}
+
+		.trouble-divider {
+			max-width: 1000px;
+			margin: 0 auto;
+			border: none;
+			border-top: 0.75px solid #ddd;
+		}
+
+		.trouble-page-title {
+			text-align: center;
+			padding: 65px 0 0;
+			background-color: #F9DDD2;
+		}
+
+		.trouble-page-title h2 {
+			font-size: 1.625em;
+			letter-spacing: 0.3em;
+			padding-bottom: 15px;
+			border-bottom: 2px dashed #1A1A1A;
+			display: inline-block;
+		}
+
+		.trouble-page-title p {
+			font-size: 0.875em;
+			padding: 20px 20px 50px;
+			line-height: 1.8;
+		}
+
+		.trouble-back {
+			text-align: center;
+			padding: 50px 0 80px;
+		}
+
+		.trouble-back a {
+			font-size: 0.875em;
+			padding: 15px 3em;
+			border: 0.75px #1a1a1a solid;
+			border-radius: 100px;
+			text-decoration: none;
+			color: #1A1A1A;
+			transition: background-color 0.3s, color 0.3s;
+		}
+
+		.trouble-back a:hover {
+			background-color: #906f64;
+			color: #fff;
+		}
+
+		@media screen and (max-width: 690px) {
+			.trouble-sidenav {
+				display: none;
+			}
+
+			.trouble-section {
+				padding: 60px 20px 0;
+			}
+
+			.trouble-links {
+				gap: 10px;
+			}
+
+			.trouble-links a {
+				padding: 10px 1.5em;
+				font-size: 0.813em;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<header class="fv-wrapper beauty-fv-wrapper">
+		<div class="moyou">
+			<div class="migiue">
+			</div>
+			<div class="hidarisita">
+			</div>
+		</div>
+		<nav class="text2 en">
+			<ul class="header-menu">
+				<li><a href="index.html">TOP</a></li>
+				<li class="has-child" ontouchstart=""><a>MENU</a>
+					<ul>
+						<li class="has-child" ontouchstart=""><a>医療脱毛</a>
+							<ul>
+								<li><a href="removal.html">医療脱毛について</a></li>
+								<li><a href="removal.html#removal-price">料金表</a></li>
+							</ul>
+							<span></span>
+						</li>
+						<li class="has-child" ontouchstart=""><a>美肌治療</a>
+							<ul>
+								<li><a href="beauty.html">美肌治療について</a></li>
+								<li><a href="beauty.html#beauty-price">料金表</a></li>
+							</ul>
+							<span></span>
+						</li>
+						<li><a href="drip.html">点滴療法</a></li>
+						<li><a href="doctors.html">ドクターズコスメ</a></li>
+						<li><a href="oral.html">内服療法</a></li>
+						<li><a href="aga-ed.html">AGA/ED</a></li>
+					</ul>
+				</li>
+				<li><a href="flow.html">FLOW</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+			</ul>
+		</nav>
+		<div class="fv-container">
+			<img src="images11/fv-beauty-logo.svg" alt="logo">
+		</div>
+	</header>
+
+	<!-- サイドナビ -->
+	<nav class="trouble-sidenav" id="trouble-sidenav">
+		<a href="#shimi">しみ・そばかす・ほくろ・イボ</a>
+		<a href="#nikibi">ニキビ・ニキビ跡・肌質</a>
+		<a href="#kanpan">肝斑</a>
+		<a href="#kusumi">くすみ</a>
+		<a href="#keana">毛穴</a>
+		<a href="#akaragao">赤ら顔</a>
+		<a href="#tarumi">たるみ、シワ</a>
+		<a href="#tattoo">タトゥー除去</a>
+	</nav>
+
+	<div class="trouble-page-title">
+		<h2>お悩み別治療</h2>
+		<p>お悩みに合わせた最適な治療メニューをご提案いたします。<br>お気軽にご相談ください。</p>
+	</div>
+
+	<!-- しみ・そばかす・ほくろ・イボ -->
+	<section class="trouble-section" id="shimi">
+		<h3>しみ・そばかす・ほくろ・イボ</h3>
+		<h4>しみ、そばかす</h4>
+		<p class="trouble-desc">
+			主に紫外線ダメージや加齢、遺伝的要因（そばかす）によりメラニン色素が沈着したものです。シミはサイズ、形状も様々で、年齢とともに増加する傾向があります。そばかすは一般的に頬や鼻の上に1-4㎜程度の茶色や淡褐色の斑点として現れます。
+		</p>
+		<p class="trouble-treatment-title">対応施術</p>
+		<div class="trouble-links">
+			<a href="pico.html#pico-shot">ピコショット</a>
+			<a href="pico.html#pico-training">ピコトーニング</a>
+			<a href="laser-facial.html">レーザーフェイシャル</a>
+		</div>
+		<h4>ほくろ・イボ</h4>
+		<p class="trouble-desc">
+			ほくろは色の成分であるメラニン色素を含む細胞、すなわちメラノサイトが皮膚の一部に局所的に集まって出来た母斑の一種です。イボは皮膚にできる数mm〜1cm程度の小さな良性の突起物です。主にウイルス感染（HPV：ヒトパピローマウイルスなど）で発生するものと、加齢、紫外線・摩擦などの物理刺激により発生する脂漏性角化症や首イボ（アクロコルドン）に分類されます。
+		</p>
+		<p class="trouble-treatment-title">対応施術</p>
+		<div class="trouble-links">
+			<a href="co2-laser.html">CO2レーザー</a>
+		</div>
+	</section>
+	<hr class="trouble-divider">
+
+	<!-- ニキビ・ニキビ跡・肌質 -->
+	<section class="trouble-section" id="nikibi">
+		<h3>ニキビ・ニキビ跡・肌質</h3>
+		<p class="trouble-desc">
+			ニキビの原因としてホルモンや皮脂分泌の増加、毛穴のつまり、乾燥があります。炎症がひどい状態やニキビを無理に潰すことによって赤みや凹凸が残りニキビ跡や色素沈着の原因となってしまうことがあります。
+		</p>
+		<p class="trouble-treatment-title">対応施術</p>
+		<div class="trouble-links">
+			<a href="evo.html">サーマニードルEVO</a>
+			<a href="dermapen.html">ダーマペン4</a>
+			<a href="laser-facial.html">レーザーフェイシャル</a>
+			<a href="lhala-doctor.html">ララドクター</a>
+			<a href="ultimgun.html">ウルティムガン</a>
+			<a href="kolight.html">KOライト</a>
+			<a href="electro.html">エレクトロポレーション</a>
+		</div>
+	</section>
+	<hr class="trouble-divider">
+
+	<!-- 肝斑 -->
+	<section class="trouble-section" id="kanpan">
+		<h3>肝斑</h3>
+		<p class="trouble-desc">
+			肝斑とは、頬骨周辺などに左右対称にできる、薄茶色で輪郭のはっきりしないモヤっとしたシミです。女性ホルモンのバランスの乱れや紫外線、摩擦が原因となることが多いです。
+		</p>
+		<p class="trouble-treatment-title">対応施術</p>
+		<div class="trouble-links">
+			<a href="pico.html#pico-training">ピコトーニング</a>
+			<a href="reversepeel.html">リバースピール</a>
+			<a href="evo.html">サーマニードルEVO</a>
+			<a href="dermapen.html">ダーマペン4</a>
+			<a href="ultimgun.html">ウルティムガン</a>
+			<a href="electro.html">エレクトロポレーション</a>
+		</div>
+	</section>
+	<hr class="trouble-divider">
+
+	<!-- くすみ -->
+	<section class="trouble-section" id="kusumi">
+		<h3>くすみ</h3>
+		<p class="trouble-desc">
+			くすみとは本来の明るさよりも顔全体が暗く見える状態のことです。原因としては乾燥、紫外線・摩擦によるメラニン沈着などが挙げられます。
+		</p>
+		<p class="trouble-treatment-title">対応施術</p>
+		<div class="trouble-links">
+			<a href="pico.html#pico-training">ピコトーニング</a>
+			<a href="evo.html">サーマニードルEVO</a>
+			<a href="laser-facial.html">レーザーフェイシャル</a>
+			<a href="dermapen.html">ダーマペン4</a>
+			<a href="lhala-doctor.html">ララドクター</a>
+			<a href="massagepeel.html">マッサージピール</a>
+			<a href="reversepeel.html">リバースピール</a>
+			<a href="kolight.html">KOライト</a>
+			<a href="ultimgun.html">ウルティムガン</a>
+			<a href="electro.html">エレクトロポレーション</a>
+		</div>
+	</section>
+	<hr class="trouble-divider">
+
+	<!-- 毛穴 -->
+	<section class="trouble-section" id="keana">
+		<h3>毛穴</h3>
+		<p class="trouble-desc">
+			毛穴が目立つ主な原因としては、過剰な皮脂分泌、角栓詰まり、加齢によるたるみなどが挙げられます。産毛によって毛穴が目立っている場合もあります。
+		</p>
+		<p class="trouble-treatment-title">対応施術</p>
+		<div class="trouble-links">
+			<a href="evo.html">サーマニードルEVO</a>
+			<a href="dermapen.html">ダーマペン4</a>
+			<a href="pico.html#pico-fura">ピコフラクショナル</a>
+			<a href="laser-facial.html">レーザーフェイシャル</a>
+			<a href="yag.html">レーザーシャワー</a>
+			<a href="lhala-doctor.html">ララドクター</a>
+			<a href="massagepeel.html">マッサージピール</a>
+			<a href="ultimgun.html">ウルティムガン</a>
+			<a href="hydra.html">ハイドラシャワー</a>
+		</div>
+	</section>
+	<hr class="trouble-divider">
+
+	<!-- 赤ら顔 -->
+	<section class="trouble-section" id="akaragao">
+		<h3>赤ら顔</h3>
+		<p class="trouble-desc">
+			皮膚の下の細かい毛細血管が広がったまま戻らなくなり、炎症が続いて顔の赤みが定着している状態です。主に頬や鼻、額に見られることが多いです。
+		</p>
+		<p class="trouble-treatment-title">対応施術</p>
+		<div class="trouble-links">
+			<a href="evo.html">サーマニードルEVO</a>
+			<a href="pico.html#pico-training">ピコトーニング</a>
+			<a href="yag.html">レーザーシャワー</a>
+			<a href="kolight.html">KOライト</a>
+		</div>
+	</section>
+	<hr class="trouble-divider">
+
+	<!-- たるみ、しわ -->
+	<section class="trouble-section" id="tarumi">
+		<h3>たるみ、シワ</h3>
+		<p class="trouble-desc">
+			加齢によりコラーゲンや皮下脂肪の減少、骨が痩せてくることで組織が緩み重力で下垂した状態がたるみです。肌の弾力低下、乾燥、紫外線がシワの原因として挙げられます。
+		</p>
+		<p class="trouble-treatment-title">対応施術</p>
+		<div class="trouble-links">
+			<a href="liftera-v.html">リフテラV</a>
+			<a href="piamo.html">ピアモリフティング</a>
+			<a href="evo.html">サーマニードルEVO</a>
+			<a href="lift-up.html">リフトアップレーザー</a>
+			<a href="yag.html">レーザーシャワー</a>
+			<a href="pico.html#pico-fura">ピコフラクショナル</a>
+			<a href="ultimgun.html">ウルティムガン</a>
+			<a href="dermapen.html">ダーマペン4</a>
+			<a href="massagepeel.html">マッサージピール</a>
+			<a href="electro.html">エレクトロポレーション</a>
+		</div>
+	</section>
+	<hr class="trouble-divider">
+
+	<!-- タトゥー除去 -->
+	<section class="trouble-section" id="tattoo">
+		<h3>タトゥー除去</h3>
+		<p class="trouble-desc">
+			レーザーによる安全なタトゥー除去をご提供します。色・濃さ・サイズに応じて最適な治療プランをご提案いたします。
+		</p>
+		<div class="trouble-links">
+			<a href="tattoo.html">タトゥー除去</a>
+		</div>
+	</section>
+
+	<div class="trouble-back">
+		<a href="beauty.html">美肌治療ページに戻る</a>
+	</div>
+
+	<!-- ここから同じ -->
+	<section class="reserve-wrapper">
+		<h3 class="en">RESERVE</h3>
+		<h6>ご予約はお電話にて受け付けています。<br>ご予約・ご質問への電話対応は、診察時間内のみ受け付けております。</h6>
+		<a href="tel:0858271145" class="tel-img"><img src="images/tel.svg" alt="電話番号"></a>
+		<div>
+			<dl>
+				<dt>月曜〜水曜・金曜</dt>
+				<dd>9:00~12:30 / 15:00~17:30</dd>
+			</dl>
+			<dl>
+				<dt>木曜・土曜</dt>
+				<dd>9:00~12:30</dd>
+			</dl>
+		</div>
+		<section class="reserve-wrapper-SNS">
+			<div>
+				<h2 class="reserve-wrapper-instagram">Instagram</h2>
+				<a href="http://www.instagram.com/mirai_medicalclinic/"><img src="images19/Instagram.png" width="40"
+						alt="インスタグラム"></a>
+			</div>
+
+			<div>
+				<h2 class="reserve-wrapper-instagram">LINE</h2>
+				<a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=053avjnr"><img src="images19/LINE.png"
+						width="40" alt="ライン"></a>
+			</div>
+
+		</section>
+		<a href="https://ssc3.doctorqube.com/mirai-clinic/" class="line-img">
+			<img src="images19/banner_line.png" alt="ライン登録">
+		</a>
+	</section>
+
+	<section class="access-wrapper">
+		<div class="access-container">
+			<a href="index.html" class="logo-img"><img src="images/logo.svg" alt="ロゴ"></a>
+			<dl>
+				<dt>住所</dt>
+				<dd>〒682-0806<br>鳥取県倉吉市昭和町2丁目233</dd>
+			</dl>
+			<dl>
+				<dt>電話番号</dt>
+				<dd>0858-27-1144<br>0858-27-1145(美容専用)</dd>
+			</dl>
+			<dl>
+				<dt>診療時間</dt>
+				<dd>午前 9:00~12:30<br>午後 15:00~18:00<p>※木曜・土曜は午前のみ</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt>休診日</dt>
+				<dd>日曜・祝日</dd>
+			</dl>
+			<dl>
+				<dt>設備</dt>
+				<dd>駐車場あり</dd>
+			</dl>
+			<a href="" class="time"><img src="images/zikan.svg" alt="営業時間"></a>
+		</div>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13003.028234325842!2d133.8376577!3d35.4360477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3555d9d5740814b1%3A0x6b838d551ee417e0!2z44G_44KJ44GE5YaF56eR44Kv44Oq44OL44OD44Kv!5e0!3m2!1sja!2sjp!4v1675225084098!5m2!1sja!2sjp"
+			width="600" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</section>
+
+	<section class="sitemap-wrapper">
+		<div class="sitemap-title">
+			<div></div>
+			<h3 class="en">Sitemap</h3>
+		</div>
+		<div class="sitemap-wrapper-flex">
+			<div class="sitemap-container">
+				<div>
+					<a href="index.html" class="sitemap">TOP</a>
+					<a href="removal.html" class="sitemap">医療脱毛</a>
+					<a href="beauty.html" class="sitemap">美肌治療</a>
+				</div>
+				<div>
+					<a href="drip.html" class="sitemap">点滴療法</a>
+					<a href="doctors.html" class="sitemap">コスメ</a>
+					<a href="oral.html" class="sitemap">内服治療</a>
+				</div>
+				<div>
+					<a href="aga-ed.html" class="sitemap">AGA・ED</a>
+					<a href="laser.html" class="sitemap">レーザー機器</a>
+				</div>
+			</div>
+			<a href="https://mirai-clinic.info/" class="sitemap-link"><button>クリニック本サイトはこちら</button></a>
+		</div>
+	</section>
+
+	<footer class="en">
+		<small>
+			Copyright 2023 Mirai Medical Clinic All rights reserved.
+		</small>
+	</footer>
+
+	<script>
+		// スクロールスパイ：現在表示中のセクションをサイドナビでハイライト
+		(function () {
+			var navLinks = document.querySelectorAll('.trouble-sidenav a');
+			var sections = [];
+			navLinks.forEach(function (link) {
+				var id = link.getAttribute('href').replace('#', '');
+				var section = document.getElementById(id);
+				if (section) sections.push({ id: id, el: section, link: link });
+			});
+
+			var sidenav = document.getElementById('trouble-sidenav');
+			var firstSection = document.getElementById('shimi');
+
+			function onScroll() {
+				var scrollPos = window.scrollY + window.innerHeight / 3;
+
+				// シミセクションに到達したらサイドナビを表示
+				if (firstSection && window.scrollY >= firstSection.offsetTop - 100) {
+					sidenav.classList.add('is-visible');
+				} else {
+					sidenav.classList.remove('is-visible');
+				}
+
+				var current = null;
+				sections.forEach(function (s) {
+					if (s.el.offsetTop <= scrollPos) current = s;
+				});
+				navLinks.forEach(function (link) { link.classList.remove('active'); });
+				if (current) current.link.classList.add('active');
+			}
+
+			window.addEventListener('scroll', onScroll);
+			onScroll();
+
+			// スムーススクロール
+			navLinks.forEach(function (link) {
+				link.addEventListener('click', function (e) {
+					e.preventDefault();
+					var id = this.getAttribute('href').replace('#', '');
+					var target = document.getElementById(id);
+					if (target) {
+						window.scrollTo({ top: target.offsetTop - 30, behavior: 'smooth' });
+					}
+				});
+			});
+		})();
+	</script>
+</body>
+
+</html>

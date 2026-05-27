@@ -316,6 +316,71 @@ body {
 .search-container-new{
   width: 90px;
 }
+/* お悩みカードグリッド */
+.search-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 40px auto 0;
+}
+.search-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #1A1A1A;
+    display: block;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.search-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.search-card-image {
+    overflow: hidden;
+}
+.search-card-image img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+}
+.search-card:hover .search-card-image img {
+    transform: scale(1.05);
+}
+.search-card h4 {
+    font-size: 0.938em;
+    padding: 12px 15px 5px;
+    font-weight: 500;
+    color: #906f64;
+}
+.search-card p {
+    font-size: 0.75em;
+    padding: 15px 15px 12px;
+    line-height: 1.6;
+    color: #666;
+}
+.search-card-more {
+    display: block;
+    font-size: 0.688em;
+    color: #906f64;
+    text-align: right;
+    padding: 0 15px 15px;
+    letter-spacing: 0.05em;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+.search-card-more::after {
+    content: "\203A";
+    display: inline-block;
+    margin-left: 4px;
+    transition: transform 0.3s;
+}
+.search-card:hover .search-card-more::after {
+    transform: translateX(3px);
+}
     .search-facial { /* お尻の三角記号つける　*/
     border-bottom: #1A1A1A 0.5px solid;
     padding: 0 0 5px 0;
