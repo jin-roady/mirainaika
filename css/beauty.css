@@ -109,12 +109,6 @@
     color: #C7AF06;
     padding: 0 0 15px 0;
 }
-.beauty-menu-description {
-    max-width: 760px;
-    font-size: 0.9em;
-    line-height: 1.9;
-    padding: 0 0 5px 0;
-}
 .beauty-menu-title div {
     display: flex;
     gap: 0.625em;
