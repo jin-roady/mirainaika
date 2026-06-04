@@ -10,6 +10,43 @@
   margin-top: 20px !important;
 }
 
+.electro-course-container .electro-course-item {
+  padding: 22px 0 18px 0;
+}
+
+.electro-course-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 0 12px 0;
+}
+
+.electro-course-heading h5 {
+  padding: 0;
+}
+
+.electro-course-heading p {
+  flex: 0 0 auto;
+  font-weight: 500;
+  color: #1a1a1a;
+  padding: 0;
+}
+
+.electro-option-item h5 {
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .electro-course-heading {
+    display: block;
+  }
+
+  .electro-course-heading h5 {
+    padding-bottom: 8px;
+  }
+}
+
 .about-wrapper .about_bg_sp {
   display: none;
 }
@@ -436,4 +473,3 @@ a.about-image img {
     top: 17px;
   }
 }
-
