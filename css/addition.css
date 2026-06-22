@@ -6,6 +6,17 @@
   display: none;
 }
 
+.lhala-component-name-long {
+  min-width: 0;
+  white-space: normal;
+}
+
+.lhala-component-name-long h6 {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  line-height: 1.7;
+}
+
 .beauty_menu_p01 {
   margin-top: 20px !important;
 }
