@@ -21,6 +21,23 @@
   margin-top: 20px !important;
 }
 
+.beauty-price-list .toggle:checked + .title + .content,
+.beauty-price-list .content.show {
+  max-height: 3000px !important;
+}
+
+.beauty-price-list .content-wrapper > .beauty_menu_p01 {
+  color: #A48A81;
+  font-weight: 500;
+  border-bottom: 0.75px #1a1a1a dashed;
+  padding: 25px 0 10px;
+}
+
+.beauty-price-list .content-wrapper div p:only-child {
+  color: #A48A81;
+  font-weight: 500;
+}
+
 .about-wrapper .about_bg_sp {
   display: none;
 }
@@ -307,7 +324,7 @@ a.about-image img {
     opacity: 1 !important;
   }
   .search-wrapper {
-    padding-bottom: 1px;
+    padding-bottom: 50px;
   }
   .search-detail {
     font-size: 0.875em;
@@ -445,5 +462,70 @@ a.about-image img {
     position: absolute;
     left: 70px;
     top: 17px;
+  }
+  .beauty-price-list {
+    padding: 0 0.75em;
+  }
+  .beauty-price-list .title,
+  .beauty-price-list-set label {
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
+  .beauty-price-list .content-wrapper {
+    padding: 5px 1em 22px;
+  }
+  .beauty-price-list .content-wrapper div {
+    gap: 1em;
+    align-items: flex-start;
+    padding: 18px 0 10px;
+  }
+  .beauty-price-list .content-wrapper div p {
+    line-height: 1.7;
+  }
+  .beauty-price-list .content-wrapper div p:first-child {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .beauty-price-list .content-wrapper div p:last-child {
+    flex: 0 0 auto;
+    max-width: 48%;
+    text-align: right;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+  .beauty-price-list .content-wrapper div p:only-child {
+    min-width: 0;
+    width: 100%;
+    color: #A48A81;
+    font-weight: 500;
+    text-align: left;
+    white-space: normal;
+  }
+  .co2-price-section {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  .co2-price-section .piamo-price {
+    min-width: 680px !important;
+    table-layout: fixed !important;
+  }
+  .co2-price-section .piamo-price th,
+  .co2-price-section .piamo-price td {
+    line-height: 1.7 !important;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+  .co2-price-section .piamo-price th:nth-child(1),
+  .co2-price-section .piamo-price td:nth-child(1) {
+    width: 34%;
+  }
+  .co2-price-section .piamo-price th:nth-child(2),
+  .co2-price-section .piamo-price td:nth-child(2) {
+    width: 24%;
+  }
+  .co2-price-section .piamo-price th:nth-child(3),
+  .co2-price-section .piamo-price td:nth-child(3) {
+    width: 42%;
   }
 }
