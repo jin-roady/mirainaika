@@ -99,6 +99,33 @@
   overflow-wrap: anywhere;
 }
 
+.dermapen-risk-wrapper {
+  background-color: #F9DDD2;
+  padding: 50px 0 1px;
+}
+
+.dermapen-risk-wrapper h3 {
+  font-size: 1.438em;
+  background-color: #fff;
+  width: fit-content;
+  margin: 0 auto 40px;
+}
+
+.dermapen-risk-container {
+  max-width: 1000px;
+  margin: 0 auto 70px;
+  padding: 35px 3.438em 10px;
+  background-color: #fff;
+  border: 1px #A48A81 solid;
+}
+
+.dermapen-risk-container p {
+  font-size: 0.875em;
+  padding: 0 0 30px;
+  line-height: 23px;
+  letter-spacing: 1px;
+}
+
 .about-wrapper .about_bg_sp {
   display: none;
 }
@@ -610,6 +637,14 @@ a.about-image img {
     white-space: normal;
     word-break: break-all;
     overflow-wrap: anywhere;
+  }
+  .dermapen-risk-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .dermapen-risk-container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .co2-price-section {
     overflow-x: auto !important;
