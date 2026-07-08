@@ -69,6 +69,27 @@
     padding: 0 1em 0 0;
 }
 
+.lhala-detail-wrapper {
+    padding-top: 0 !important;
+    padding-bottom: 20px !important;
+}
+
+.lhala-detail-wrapper h4 {
+    margin-top: 50px !important;
+}
+
+.lhala-detail-wrapper > h4:first-child {
+    margin-top: 40px !important;
+}
+
+.lhala-treatment-detail-wrapper {
+    padding-top: 0 !important;
+}
+
+.lhala-treatment-detail-wrapper .pico-menu-detail h4 {
+    margin-top: 0 !important;
+}
+
 @media screen and (max-width: 690px) {
 .liftera-content-container,
     .liftera-risk-container,
@@ -80,8 +101,22 @@
         padding-right: 20px;
     }
     .liftera-content-table {
-        padding: 0;
-        padding-left: 10vw;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 0 10px;
+    }
+    .liftera-content-table p {
+        display: block;
+        max-width: none;
+        margin: 0;
+        line-height: 1.7;
+        text-align: left;
+    }
+    .liftera-content-table p::before {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 0.8em 0 0;
+        line-height: 1;
     }
   }

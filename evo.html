@@ -156,8 +156,64 @@
 			}
 
 			.dermapen-content-table {
-				padding: 0 15px;
-				flex-direction: column;
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 0;
+				padding: 0;
+			}
+
+			.dermapen-content-table p {
+				display: flex;
+				align-items: flex-start;
+				gap: 0.8em;
+				max-width: none;
+				margin: 0;
+				overflow-wrap: anywhere;
+			}
+
+			.dermapen-content-table p::before {
+				flex: 0 0 auto;
+				padding: 0;
+				line-height: 1;
+			}
+
+			.dermapen-point-container h3 {
+				max-width: 100%;
+				width: auto;
+				font-size: 1.45em;
+				line-height: 1.5;
+				overflow-wrap: anywhere;
+				word-break: keep-all;
+			}
+
+			.drip-component-wrapper h4 {
+				font-size: 1.2em;
+				line-height: 1.45;
+				overflow-wrap: anywhere;
+				word-break: keep-all;
+				padding-left: 14px;
+			}
+
+			.pico-menu-text p,
+			.dermapen-risk-container p {
+				overflow-wrap: anywhere;
+			}
+
+			.dermapen-content-container {
+				padding-left: 16px;
+				padding-right: 16px;
+			}
+
+			.dermapen-content-table p {
+				font-size: 0.92em;
+				line-height: 1.7;
+			}
+
+			.dermapen-point-container p {
+				font-size: 0.82em;
+				line-height: 2;
+				letter-spacing: 0;
+				overflow-wrap: anywhere;
 			}
 
 			.dermapen-risk-container {
@@ -307,7 +363,7 @@
 				<h5>施術間隔</h5>
 				<p>効果を維持、継続させるためには定期的（2〜3ヶ月に1回）に施術を行うことをおすすめしています。</p>
 				<h5>副作用・リスク</h5>
-				<p>・数日〜1週間程度は赤みがありますが、施術翌日からメイクで隠せます。紫外線対策を徹底していただくようお願いいたします。<br>・1〜2週間程度は肌が生まれ変わる過程で肌のざらつき、皮むけ、かさぶたなどが生じる可能性があります。色素沈着・脱色・ケロイドにならないよう、摩擦を避けてください。<br>・ごくまれに施術部位の火傷、発赤、腫脹、熱感などが出ることがあります。<br>・ダウンタイムは少なく、患者様によってはまれに赤みが残ることもありますが1〜2日でほぼ消失します。メイクは施術後6時間以降から可能です。
+				<p>・1〜2週間程度は肌が生まれ変わる過程で肌のざらつき、皮むけ、かさぶたなどが生じる可能性があります。色素沈着にならないよう、摩擦を避けてください。<br>・ごくまれに施術部位の火傷、発赤、腫脹、熱感などが出ることがあります。<br>・ダウンタイムは少なく、患者様によってはまれに赤みが残ることもありますが1〜2日でほぼ消失します。<br>・メイクは施術後6時間以降から可能です。紫外線対策を徹底してください。
 				</p>
 			</div>
 		</div>
@@ -416,7 +472,6 @@
 				◯抗血小板薬（バイアスピリン）、抗凝固剤（ワーファリン）などを服用している方<br>
 				◯皮膚がんまたはがんの疑いのある方<br>
 				◯医療やエステでの顔脱毛やフェイシャル施術前後1ヶ月以内の方<br>
-				◯金の糸など金属類の糸リフトをいれている方（吸収されるタイプの糸の場合は施術3ヶ月以降であれば可能）<br>
 				◯プロテーゼ挿入されている方<br>
 				◯注入治療（コラーゲンやヒアルロン酸、ボトックス注入、脂肪溶解注射）前後4週間以内の方<br>
 				◯市販のスクラブ配合商品の使用前後2週間以内の場合<br>

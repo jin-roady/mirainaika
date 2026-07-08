@@ -150,8 +150,23 @@
 			}
 
 			.dermapen-content-table {
-				padding: 0 15px;
-				flex-direction: column;
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 0;
+				padding: 0 10px;
+			}
+			.dermapen-content-table p {
+				display: flex;
+				align-items: flex-start;
+				gap: 0.8em;
+				max-width: none;
+				margin: 0;
+				line-height: 1.7;
+			}
+			.dermapen-content-table p::before {
+				flex: 0 0 auto;
+				padding: 0;
+				line-height: 1;
 			}
 
 			.dermapen-risk-container {
@@ -164,9 +179,16 @@
 			}
 
 			.conponent-name h6 {
-				overflow-wrap: break-word;
-				word-wrap: break-word;
-				font-size: 0.85em;
+				max-width: 100%;
+				white-space: normal;
+				overflow-wrap: normal;
+				word-break: keep-all;
+				font-size: 0.95em;
+				line-height: 1.6;
+			}
+			.conponent-name .homecare-price {
+				display: block;
+				margin-left: 1.2em;
 			}
 			.drip-component-wrapper {
 				overflow: hidden;
@@ -316,7 +338,7 @@
 		<h4>ホームケア製品（WiQo）</h4>
 		<div class="drip-component-container">
 			<div class="conponent-name">
-				<h6>・WiQ 保湿ナリシングクリーム</h6>
+				<h6>・WiQo 保湿ナリシングクリーム<span class="homecare-price">（50ml）：11,000円</span></h6>
 				<div>
 					<p class="conponent-name-tag1">保湿</p>
 					<p class="conponent-name-tag2">バリア回復</p>
@@ -324,7 +346,6 @@
 			</div>
 			<img src="images_massagepeel/dry-skin-cream.jpg" alt="WiQ 保湿ナリシングクリーム" class="dermeden-product-img">
 			<p>ハリを失ったり、加齢や寒さ、風といった外気の影響を受けたりした肌の皮脂膜を回復させます。特に、外来でピーリングを受けた後は皮膚の保護膜が失われるため、このクリームが必要となります。本品は、保護膜を回復することにより、乾燥、皮膚のかゆみ、発赤、ひび割れの原因となる皮膚からの蒸散を防ぎます。本有効成分は、皮膚のヒアルロン酸分解を抑制し、フィラーやバイオリバイタライジング製品の持続時間を延長するほか、経年的老化や光加齢によるダメージを軽減します。</p>
-			<p>保湿クリーム（50ml）11,000円</p>
 		</div>
 	</section>
 
@@ -332,7 +353,7 @@
 		<h3>施術が受けられない方</h3>
 		<div class="dermapen-risk-container">
 			<p>
-				◯妊娠・授乳中の方<br>◯施術部位に炎症、皮膚疾患、日焼け、ヘルペスのある方<br>◯コウジ酸、アルコールにアレルギーのある方<br>◯過度の敏感肌、乾燥肌の方<br>◯2週間以内にトレチノイン、ハイドロキノン、ニキビ治療薬を使用している方
+				◯妊娠・授乳中の方<br>◯施術部位に炎症、皮膚疾患、日焼け、ヘルペスのある方<br>◯コウジ酸にアレルギーのある方<br>◯過度の敏感肌、乾燥肌の方<br>◯2週間以内にトレチノイン、ハイドロキノン、ニキビ治療薬を使用している方
 			</p>
 		</div>
 	</section>

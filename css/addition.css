@@ -38,6 +38,67 @@
   font-weight: 500;
 }
 
+.beauty-price-list-set .title {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 20px 1.25em 22px;
+  line-height: 1.7;
+  text-align: left;
+  white-space: normal;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.beauty-price-list-set .title div {
+  display: block;
+  margin: 0 0 8px 0;
+  min-width: 0;
+  max-width: 18em;
+  white-space: normal;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
+.beauty-price-list-set .title span {
+  display: inline-block;
+  font-size: 2em;
+  line-height: 1;
+  padding: 0 5px 0 0;
+}
+
+.beauty-price-list-set .content-wrapper div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.35em;
+}
+
+.beauty-price-list-set .content-wrapper div p:first-child {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.beauty-price-list-set .content-wrapper div p:last-child {
+  justify-self: start;
+  min-width: 0;
+  max-width: 100%;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.beauty-price-text p {
+  display: block;
+  width: min(100%, calc(100vw - 70px)) !important;
+  max-width: min(100%, calc(100vw - 70px));
+  white-space: normal;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
+
 .about-wrapper .about_bg_sp {
   display: none;
 }
@@ -501,6 +562,54 @@ a.about-image img {
     font-weight: 500;
     text-align: left;
     white-space: normal;
+  }
+  .beauty-price-list-set .title {
+    display: block;
+    padding: 20px 1.25em 22px;
+    line-height: 1.7;
+    text-align: left;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+  }
+  .beauty-price-list-set .title div {
+    display: block;
+    margin: 0 0 8px 0;
+    max-width: 18em;
+  }
+  .beauty-price-list-set .title span {
+    display: inline-block;
+    font-size: 2em;
+    line-height: 1;
+    padding: 0 5px 0 0;
+  }
+  .beauty-price-list-set .content-wrapper div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.35em;
+  }
+  .beauty-price-list-set .content-wrapper div p:first-child {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+  .beauty-price-list-set .content-wrapper div p:last-child {
+    justify-self: start;
+    min-width: 0;
+    max-width: 100%;
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  .beauty-price-text {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .beauty-price-text p {
+    max-width: calc(100vw - 70px);
+    white-space: normal;
+    word-break: break-all;
+    overflow-wrap: anywhere;
   }
   .co2-price-section {
     overflow-x: auto !important;

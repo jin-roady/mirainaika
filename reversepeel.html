@@ -170,8 +170,25 @@
 
 			/* お悩みテーブル横はみ出し修正 */
 			.dermapen-content-table {
-				padding: 0 15px;
-				flex-direction: column;
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 0;
+				padding: 0 10px;
+			}
+
+			.dermapen-content-table p {
+				display: flex;
+				align-items: flex-start;
+				gap: 0.8em;
+				max-width: none;
+				margin: 0;
+				line-height: 1.7;
+			}
+
+			.dermapen-content-table p::before {
+				flex: 0 0 auto;
+				padding: 0;
+				line-height: 1;
 			}
 
 			/* リスクコンテナ横はみ出し修正 */
@@ -186,10 +203,34 @@
 			}
 
 			/* 成分名の折り返し・はみ出し防止 */
+			.conponent-name {
+				min-width: 0;
+				max-width: 100%;
+				white-space: normal;
+				align-items: flex-start;
+			}
+
+			.conponent-name div {
+				min-width: 0;
+				max-width: 100%;
+				flex-wrap: wrap;
+			}
+
 			.conponent-name h6 {
-				overflow-wrap: break-word;
-				word-wrap: break-word;
-				font-size: 0.85em;
+				flex: 1 1 100%;
+				max-width: 100%;
+				white-space: normal;
+				overflow-wrap: anywhere;
+				word-break: break-all;
+				font-size: 0.95em;
+				line-height: 1.6;
+				width: auto;
+				margin-right: 0;
+			}
+
+			.conponent-name .homecare-price {
+				display: block;
+				margin-left: 1.2em;
 			}
 
 			.drip-component-wrapper {
@@ -198,6 +239,38 @@
 
 			.drip-component-container {
 				overflow: hidden;
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			.drip-component-wrapper h4,
+			.drip-component-container p,
+			.pico-menu-detail h4,
+			.pico-menu-text p {
+				width: 100%;
+				white-space: normal;
+				word-break: break-all;
+				overflow-wrap: anywhere;
+			}
+
+			.drip-component-wrapper h4,
+			.pico-menu-detail h4 {
+				max-width: 13em;
+			}
+
+			.drip-component-container p,
+			.pico-menu-text p {
+				max-width: 100%;
+			}
+
+			.conponent-name .conponent-name-tag1,
+			.conponent-name .conponent-name-tag2 {
+				width: fit-content;
+				max-width: 100%;
+				padding-left: 6px;
+				padding-right: 6px;
+				word-break: keep-all;
+				overflow-wrap: normal;
 			}
 
 			/* リスクセクション横はみ出し修正 */
@@ -383,21 +456,20 @@
 		<h4>アフターケア製品</h4>
 		<div class="drip-component-container">
 			<div class="conponent-name">
-				<h6>・Lightening Serum（ライトニングセラム）</h6>
+				<h6>・Lightening Serum（ライトニングセラム）<span class="homecare-price">（20ml）：15,400円</span></h6>
 				<div>
 					<p class="conponent-name-tag1">肝斑</p>
 					<p class="conponent-name-tag2">色素沈着</p>
 					<p class="conponent-name-tag1">美白</p>
 				</div>
 			</div>
-			<img src="images_reversepeel/lightening-serum.jpg" alt="WiQo Lightening Serum ライトニングセラム"
+			<img src="images_reversepeel/lightening-serum.jpg" alt="ライトニングセラム"
 				class="dermeden-product-img">
 			<p>ライトニングセラムとは肝斑や色素沈着、シミの治療に有効な成分である「トラネキサム酸」をはじめ、フェルラ酸、ラクトフェリン、ニコチンアミド、グラブリジン、αリポ酸などが配合されています。さまざまな美白剤が配合されているためメラニン生成を抑制させる効果があります。
 			</p>
 			<p>【ご自宅での使用方法】洗顔後すぐのお肌に塗布し、浸透させた後に化粧水を塗ってください。<br>朝晩2回、肝斑部分に塗布します。肝斑が目立たなくなった後も、再発防止のため1日1回朝のみ塗布してください。
 			</p>
 			<p>※日中は紫外線に当たらないように、外に出る前に日焼け止めクリームを塗り、長く外にいる場合は再度日焼け止めクリームを塗布してください。</p>
-			<p>15,400円</p>
 		</div>
 	</section>
 
@@ -405,7 +477,7 @@
 		<h3>施術が受けられない方</h3>
 		<div class="dermapen-risk-container">
 			<p>
-				◯妊娠・授乳中の方<br>◯施術部位に炎症、皮膚疾患、日焼け、ヘルペスのある方<br>◯コウジ酸にアレルギーのある方<br>◯過度の敏感肌、乾燥肌の方<br>◯2週間以内にトレチノイン、ハイドロキノン、ニキビ治療薬を使用している方
+				◯妊娠・授乳中の方<br>◯施術部位に炎症、皮膚疾患、日焼け、ヘルペスのある方<br>◯アスピリンアレルギー、コウジ酸アレルギー、アルコールアレルギーのある方<br>◯過度の敏感肌、乾燥肌の方<br>◯2週間以内にトレチノイン、ハイドロキノン、ニキビ治療薬を使用している方
 			</p>
 		</div>
 	</section>
