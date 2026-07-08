@@ -37,17 +37,20 @@
     margin: 0 auto 22px auto;
 }
 .pico-content-table {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10em;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 3em;
+    padding: 0 7em;
 }
 .pico-content-table p {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8em;
     padding: 13px 0 0 0;
 }
 .pico-content-table p::before {
     content: url(../images/check2.png);
-    vertical-align: middle;
-    padding: 0 1em 0 0;
+    flex: 0 0 auto;
 }
 .pico-point-wrapper {
     background-color: #F8F7F6;
@@ -236,10 +239,18 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    .pico-content-wrapper h3,
+    .pico-point-container h3 {
+        max-width: 100%;
+        width: auto;
+        font-size: 1.7em;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
     .pico-content-table {
+        grid-template-columns: 1fr;
+        gap: 0;
         padding: 0;
-        padding-left: 10vw;
-        flex-wrap: wrap;
     }
     .pico-menu-img {
         flex-wrap: wrap;
