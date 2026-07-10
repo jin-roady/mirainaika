@@ -120,10 +120,14 @@
 }
 
 .dermapen-risk-container p {
-  font-size: 0.875em;
-  padding: 0 0 30px;
-  line-height: 23px;
-  letter-spacing: 1px;
+    font-size: 0.875em;
+    padding: 0 0 30px;
+    line-height: 23px;
+    letter-spacing: 1px;
+}
+
+.ultimgun-lineup-wrapper h4 {
+    margin-top: 40px !important;
 }
 
 .about-wrapper .about_bg_sp {
