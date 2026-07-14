@@ -40,3 +40,7 @@
 .yag-content-container p {
     padding: 0 0 12px 0;
 }
+.yag-content-container .detail-bullet-list {
+    padding: 0 0 12px 0;
+    border-bottom: 0;
+}

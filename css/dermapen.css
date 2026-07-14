@@ -49,6 +49,48 @@
     vertical-align: middle;
     padding: 0 1em 0 0;
 }
+.kolight-worry-list .kolight-worry-item {
+    display: flex;
+    align-items: flex-start;
+}
+.dermapen-worry-list .dermapen-worry-item {
+    display: flex;
+    align-items: flex-start;
+}
+.kolight-worry-list .kolight-worry-item::before {
+    content: none;
+    padding: 0;
+}
+.dermapen-worry-list .dermapen-worry-item::before {
+    content: none;
+    padding: 0;
+}
+.kolight-worry-list .kolight-worry-check {
+    flex: 0 0 21px;
+    margin-right: 1em;
+    padding-top: 2px;
+}
+.dermapen-worry-list .dermapen-worry-check {
+    flex: 0 0 21px;
+    margin-right: 1em;
+    padding-top: 2px;
+}
+.kolight-worry-list .kolight-worry-check img {
+    display: block;
+    width: 21px;
+    height: 20px;
+}
+.dermapen-worry-list .dermapen-worry-check img {
+    display: block;
+    width: 21px;
+    height: 20px;
+}
+.kolight-worry-list .kolight-worry-item > span:last-child {
+    min-width: 0;
+}
+.dermapen-worry-list .dermapen-worry-item > span:last-child {
+    min-width: 0;
+}
 .dermapen-point-wrapper {
     background-color: #F8F7F6;
     padding: 100px 0 0 0;

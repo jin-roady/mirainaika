@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="css/tattoo.css">
 	<link rel="stylesheet" href="css/accordion.css">
 	<link rel="stylesheet" href="css/addition.css">
-	<link rel="stylesheet" href="css/dermapen.css">
+	<link rel="stylesheet" href="css/dermapen.css?v=20260714_2">
 
 	<!-- Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,14 +79,14 @@
 		<h3>ダーマペン4：Dermapen</h3>
 		<div class="dermapen-content-container">
 			<h5>こんなお悩みの方に</h5>
-			<div class="dermapen-content-table">
+			<div class="dermapen-content-table dermapen-worry-list">
 				<div>
-					<p>ニキビ・ニキビ跡</p>
-					<p>毛穴の開きが気になる方</p>
+					<p class="dermapen-worry-item"><span class="dermapen-worry-check" aria-hidden="true"><img src="images/check2.png" alt=""></span><span>ニキビ・ニキビ跡</span></p>
+					<p class="dermapen-worry-item"><span class="dermapen-worry-check" aria-hidden="true"><img src="images/check2.png" alt=""></span><span>毛穴の開きが気になる方</span></p>
 				</div>
 				<div>
-					<p>シミ・色素沈着が気になる方</p>
-					<p>小じわ・くすみが気になる方</p>
+					<p class="dermapen-worry-item"><span class="dermapen-worry-check" aria-hidden="true"><img src="images/check2.png" alt=""></span><span>シミ・色素沈着が気になる方</span></p>
+					<p class="dermapen-worry-item"><span class="dermapen-worry-check" aria-hidden="true"><img src="images/check2.png" alt=""></span><span>小じわ・くすみが気になる方</span></p>
 				</div>
 			</div>
 		</div>
@@ -269,20 +269,44 @@
 		<h3>治療を受けられない方</h3>
 		<p class="dermapen-cannot-text">下記に該当される方は、ダーマペン4治療を受けられないのでご了承ください。</p>
 		<div class="dermapen-risk-container">
-			<p>
-				◯単純性ヘルペスや重度のニキビなど皮膚炎の方（活動性の細菌感染/真菌感染）<br>◯金属アレルギーの方<br>◯エムラクリームやリドカインクリームなどに麻酔アレルギーがある方<br>◯妊娠中/授乳中の方<br>◯重度の糖尿病、膠原病などの創傷治癒が遅くなる疾患を有する方<br>◯ケロイド体質の方<br>◯出血傾向、出血性疾患のある方<br>◯抗血小板薬（バイアスピリン）、抗凝固剤（ワーファリン）などを服用している方<br>◯皮膚がんまたはがんの疑いのある方<br>◯医療やエステでの顔脱毛やフェイシャル施術前後１ヶ月以内の方<br>◯金の糸など金属類の糸リフトをいれている方<br>（吸収されるタイプの糸の場合は施術３ヶ月以降であれば可能）<br>◯プロテーゼ挿入されている方<br>◯注入治療(コラーゲンやヒアルロン酸、ボトックス注入、脂肪溶解注射)前後4週間以内の方<br>◯市販のスクラブ配合商品の使用前後2週間以内の場合<br>◯皮膚剥離系化粧品（ゼオスキンなど）の使用前後1ヶ月以内の場合<br>◯レチノール、ハイドロキノン、ピーリング効果のある製剤（トレチノイン、サリチル酸、グリコール酸など）ディフェリンゲル、ベピオゲルなどのニキビ治療薬を使用している方（施術2週間前から使用は中止してください。再開される場合は、施術後1週間ほど経過してから使用してください）<br><br>＊ヴェルヴェットスキン（PRX-T33）は脂漏性皮膚炎の方も禁忌となります。<br><br>※その他気になることがありましたら、お気軽にご相談ください。<br><br>
-
-			</p>
+			<ul class="risk-bullet-list">
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>単純性ヘルペスや重度のニキビなど皮膚炎の方（活動性の細菌感染/真菌感染）</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>金属アレルギーの方</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>エムラクリームやリドカインクリームなどに麻酔アレルギーがある方</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>妊娠中/授乳中の方</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>重度の糖尿病、膠原病などの創傷治癒が遅くなる疾患を有する方</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>ケロイド体質の方</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>出血傾向、出血性疾患のある方</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>抗血小板薬（バイアスピリン）、抗凝固剤（ワーファリン）などを服用している方</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>皮膚がんまたはがんの疑いのある方</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>医療やエステでの顔脱毛やフェイシャル施術前後１ヶ月以内の方</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>金の糸など金属類の糸リフトをいれている方<br>（吸収されるタイプの糸の場合は施術３ヶ月以降であれば可能）</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>プロテーゼ挿入されている方</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>注入治療(コラーゲンやヒアルロン酸、ボトックス注入、脂肪溶解注射)前後4週間以内の方</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>市販のスクラブ配合商品の使用前後2週間以内の場合</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>皮膚剥離系化粧品（ゼオスキンなど）の使用前後1ヶ月以内の場合</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>レチノール、ハイドロキノン、ピーリング効果のある製剤（トレチノイン、サリチル酸、グリコール酸など）ディフェリンゲル、ベピオゲルなどのニキビ治療薬を使用している方（施術2週間前から使用は中止してください。再開される場合は、施術後1週間ほど経過してから使用してください）</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">＊</span><span>ヴェルヴェットスキン（PRX-T33）は脂漏性皮膚炎の方も禁忌となります。</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">※</span><span>その他気になることがありましたら、お気軽にご相談ください。</span></li>
+			</ul>
 		</div>
 	</section>
 	<section class="dermapen-risk-wrapper">
 
 		<h3>施術時に注意が必要な方</h3>
 		<div class="dermapen-risk-container">
-			<p>
-				◯肝斑<br>◯重篤なニキビや感染症の疑いのある方<br>◯日焼けをしている、または日焼けをする予定のある方<br>◯ウーバーピール・ヴェルヴェットスキン・ヴェルヴェットビームの場合、アートメイクをされていると、色が薄くなる可能性があります。<br><br>
-				【その他の注意事項】<br>・日焼けにご注意ください。日焼けしやすい状態なので、施術後日中の外出の際は、日焼け止めを塗り紫外線対策を行ってください。（最低1～2週間）<br>・お肌が敏感な方は、薄皮がむける場合がありますが、数日で落ち着きますので、擦ったり無理に剥がさないでください。<br>・施術後は乾燥しやすいため、翌日からはこまめに保湿をしてください。
-			</p>
+			<ul class="risk-bullet-list">
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>肝斑</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>重篤なニキビや感染症の疑いのある方</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>日焼けをしている、または日焼けをする予定のある方</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>ウーバーピール・ヴェルヴェットスキン・ヴェルヴェットビームの場合、アートメイクをされていると、色が薄くなる可能性があります。</span></li>
+			</ul>
+			<p>【その他の注意事項】</p>
+			<ul class="risk-bullet-list">
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>日焼けにご注意ください。日焼けしやすい状態なので、施術後日中の外出の際は、日焼け止めを塗り紫外線対策を行ってください。（最低1～2週間）</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>お肌が敏感な方は、薄皮がむける場合がありますが、数日で落ち着きますので、擦ったり無理に剥がさないでください。</span></li>
+				<li><span class="risk-bullet-marker" aria-hidden="true">・</span><span>施術後は乾燥しやすいため、翌日からはこまめに保湿をしてください。</span></li>
+			</ul>
 		</div>
 	</section>
 
