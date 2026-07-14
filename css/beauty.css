@@ -207,6 +207,17 @@
     border-bottom: 0.75px #1a1a1a dashed;
     padding: 25px 0 10px ;
 }
+.beauty-price-list .content-wrapper div > p:first-child:not(:only-child) {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+.beauty-price-list .content-wrapper div > p:last-child:not(:only-child) {
+    flex: 0 0 auto;
+    margin-left: 1em;
+    white-space: nowrap;
+}
 
 .beauty-price-list-set .title {
     background-color: #EDE5AF;
