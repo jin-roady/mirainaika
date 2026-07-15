@@ -151,6 +151,30 @@
     gap: 2em;
 }
 
+.tattoo-detail-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tattoo-detail-list li {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 0 16px;
+}
+
+.tattoo-detail-marker {
+    flex: 0 0 1em;
+}
+
+.tattoo-detail-list li > span:last-child {
+    min-width: 0;
+}
+
+.tattoo-detail-list strong {
+    font-weight: 400;
+}
+
 
 
 .tattoo-risk-wrapper {
