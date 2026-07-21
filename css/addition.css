@@ -38,6 +38,52 @@
   font-weight: 500;
 }
 
+.beauty-price-list .content-wrapper .beauty-price-section-row {
+  display: block;
+  width: 100%;
+}
+
+.beauty-price-list .content-wrapper .beauty-price-section-row > .beauty-price-section-heading {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.beauty-price-list .content-wrapper .hydra-price-section-title,
+.beauty-price-list .content-wrapper .hydra-price-section-note {
+  display: block;
+}
+
+.beauty-price-list .content-wrapper .hydra-price-section-title {
+  white-space: nowrap;
+}
+
+.beauty-price-list .content-wrapper .hydra-price-section-note {
+  margin-top: 0.25em;
+  color: #1a1a1a;
+  font-weight: 400;
+}
+
+.beauty-price-list .content-wrapper .hydra-gender-heading {
+  display: block;
+  padding: 18px 0 6px;
+  border-bottom: 0;
+}
+
+.beauty-price-list .content-wrapper .hydra-gender-heading > p {
+  margin: 0;
+}
+
+#toggle5 + .title + .content .content-wrapper > div:not(.beauty-price-section-row):not(.hydra-gender-heading) > p:first-child::before {
+  content: "・";
+}
+
+#toggle5 + .title + .content .content-wrapper .beauty-price-section-heading::before {
+  content: none !important;
+}
+
 .beauty-price-list-set .title {
   display: block;
   width: 100%;
@@ -212,6 +258,58 @@ a.about-image img {
 
 .drip-type-content1 h5 {
   font-size: 1.16em;
+}
+
+.beauty-menu-title h5.beauty-menu-title--new {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  line-height: 1.45;
+}
+
+.beauty-menu-title h5 .newstopic {
+  flex: 0 0 auto;
+  margin-right: 0;
+  line-height: 1.4;
+}
+
+.beauty-menu-name {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Treatment page titles */
+.beauty-content-wrapper > h3,
+.dermapen-content-wrapper > h3,
+.dermapen-point-container > h3,
+.drip-content-wrapper > h3,
+.liftera-content-wrapper > h3,
+.pico-content-wrapper > h3,
+.removal-content-wrapper > h3,
+.tattoo-content-wrapper > h3 {
+  box-sizing: border-box;
+  max-width: calc(100% - 40px);
+  min-width: 0;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+@media screen and (max-width: 690px) {
+  .beauty-content-wrapper > h3,
+  .dermapen-content-wrapper > h3,
+  .dermapen-point-container > h3,
+  .drip-content-wrapper > h3,
+  .liftera-content-wrapper > h3,
+  .pico-content-wrapper > h3,
+  .removal-content-wrapper > h3,
+  .tattoo-content-wrapper > h3 {
+    width: fit-content;
+    max-width: 100%;
+    font-size: clamp(1.35rem, 6.8vw, 1.7rem);
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -587,12 +685,66 @@ a.about-image img {
     white-space: normal;
   }
   .beauty-price-list .content-wrapper div p:only-child {
+    grid-column: 1 / -1;
     min-width: 0;
     width: 100%;
     color: #A48A81;
     font-weight: 500;
     text-align: left;
     white-space: normal;
+  }
+  .beauty-price-list .content-wrapper > div:not(.beauty-price-section-row) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.25em;
+  }
+  .beauty-price-list .content-wrapper > div:not(.beauty-price-section-row) > p:first-child:not(:only-child) {
+    align-self: center;
+  }
+  .beauty-price-list .content-wrapper > div:not(.beauty-price-section-row) > p:last-child:not(:only-child) {
+    align-self: start;
+    justify-self: start;
+    max-width: none;
+    padding-left: 1em;
+    text-align: left;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .beauty-price-list .content-wrapper .beauty-price-section-row {
+    display: block;
+    width: 100%;
+    padding: 18px 0 10px;
+  }
+  .beauty-price-list .content-wrapper .beauty-price-section-row > .beauty-price-section-heading {
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+    white-space: normal;
+  }
+  .beauty-price-list .content-wrapper .piamo-body-price-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.25em;
+  }
+  .beauty-price-list .content-wrapper .piamo-body-label {
+    display: block;
+    min-width: 0;
+  }
+  .beauty-price-list .content-wrapper .piamo-body-label span {
+    display: block;
+  }
+  .beauty-price-list .content-wrapper .piamo-body-price-row > .piamo-body-price {
+    align-self: start;
+    justify-self: start;
+    max-width: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-align: left;
+    font-weight: 600;
+    white-space: nowrap;
   }
   .beauty-price-list-set .title {
     display: block;

@@ -44,3 +44,19 @@
     padding: 0 0 12px 0;
     border-bottom: 0;
 }
+
+.dermapen-point-container .yag-content-container span {
+    border-bottom: 0;
+}
+
+.dermapen-risk-wrapper.yag-risk-wrapper--spaced {
+    margin-top: 60px;
+}
+
+.drip-component-wrapper.yag-detail-wrapper {
+    padding: 50px 20px 85px;
+}
+
+.yag-detail-wrapper h4 {
+    margin: 0 0 40px;
+}

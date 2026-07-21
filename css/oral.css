@@ -4,33 +4,50 @@
 }
 
 .oral-menu-wrapper {
-    max-width: 850px;
-    margin: 0 auto;
     background-color: #F8F7F6;
+    padding: 60px 20px 70px;
 }
 .oral-menu-wrapper h4 {
+    max-width: 850px;
+    box-sizing: border-box;
     font-size: 1.5625em;
     padding-left: 20px;
     padding-bottom: 2px;
     border-left: 6px solid #000;
-    margin: 65px 0 20px 0;
+    margin: 0 auto 35px;
 }
 .oral-menu-container {
-    padding: 0 4.688em;
+    max-width: 850px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 3.125em;
 }
 .oral-menu-container h5 {
     font-size: 1.313em;
     color: #C7AF06;
-    margin: 0 0 40px 0;
-    padding: 15px 0 0 0;
+    line-height: 1.5;
+    margin: 50px 0 20px;
+}
+.oral-menu-container h5:first-child {
+    margin-top: 0;
 }
 .oral-menu-container div {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    column-gap: 2em;
+    align-items: start;
     font-size: 0.875em;
     border-bottom: #1a1a1a 1px dashed;
-    padding: 0 0 10px 0;
+    padding: 18px 0 12px;
+    line-height: 1.7;
+}
+.oral-menu-container div p:first-child {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+.oral-menu-container div p:last-child {
+    text-align: right;
+    white-space: nowrap;
 }
 .oral-menu-container h6 {
     background-color: rgba(222, 206, 198, 0.5);
@@ -38,10 +55,10 @@
     padding: 13px 1.286em;
     line-height: 22px;
     letter-spacing: 2px;
-    margin: 0 0 30px 0;
+    margin: 0 0 26px;
 }
-.oral-menu-wrapper a {
-    margin: 50px auto 70px;
+.oral-menu-wrapper > a {
+    margin: 45px auto 0;
     padding: 18px 3.125em;
     width: fit-content;
     border: #1a1a1a 1px solid;
@@ -49,7 +66,7 @@
     display: block;
     position: relative;
 }
-.oral-menu-wrapper a::after {
+.oral-menu-wrapper > a::after {
     content: url(../images11/more.png);
     position: absolute;
     display:inline-block;
@@ -61,9 +78,48 @@
     sp
 //////////////////////// */
 @media screen and (max-width: 690px) {
+    .oral-menu-wrapper {
+        padding: 50px 20px 60px;
+    }
     .oral-menu-container {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .oral-menu-wrapper h4 {
+        margin-bottom: 30px;
+    }
+    .oral-menu-container h5 {
+        margin-top: 42px;
+    }
+    .oral-menu-container div {
+        grid-template-columns: minmax(0, 1fr) max-content;
+        column-gap: 0.75em;
+        align-items: baseline;
+        padding: 16px 0 10px;
+        font-size: clamp(0.8125rem, 3.6vw, 0.875rem);
+    }
+    .oral-menu-container div p:first-child {
+        padding-right: 0.25em;
+        overflow-wrap: anywhere;
+    }
+    .oral-menu-container div p:last-child {
+        max-width: none;
+        white-space: nowrap;
+        font-variant-numeric: tabular-nums;
+    }
+    .oral-menu-container .oral-item-note {
+        display: block;
+    }
+    .oral-menu-container h6,
+    .caution-list,
+    .note-oral-text {
+        overflow-wrap: anywhere;
+    }
+    .oral-menu-wrapper > a {
+        max-width: 100%;
+        box-sizing: border-box;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 }
 
@@ -91,7 +147,7 @@
 }
 
 .caution-list {
-    margin-top: 20px;       /* 上に余白 */
+    margin: 32px 0 50px;    /* 上下余白 */
     padding: 15px 20px;     /* 内側余白 */
     background-color: #fff8e1; /* 薄い黄色背景 */
     border: 1px solid #f0d98c; /* 枠線 */
@@ -157,4 +213,3 @@
   .note-oral-link-blue::after {
     content: none !important; /* 擬似要素で矢印を消す */
   }
-  

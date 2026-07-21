@@ -59,14 +59,14 @@
 .drip-component-wrapper{
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px 85px 20px;
+    padding: 50px 20px 60px;
 }
 .drip-component-wrapper h4 {
     font-size: 1.5625em;
     padding-left: 20px;
     padding-bottom: 2px;
     border-left: 6px solid #000;
-    margin: 75px 0 0 0;
+    margin: 0 0 25px 0;
 }
 .drip-component-container {
     padding: 30px 0;
@@ -118,7 +118,7 @@
 
 .drip-type-wrapper {
     background-color: rgba(222, 206, 198, 0.6);
-    padding: 70px 20px 75px 20px;
+    padding: 60px 20px;
 }
 .drip-type-wrapper h4 {
     font-size: 1.5625em;
@@ -235,7 +235,7 @@
   
 .drip-times-wrapper {
     background-color: #F8F7F6;
-    padding: 80px 20px 60px 20px;
+    padding: 60px 20px;
 }
 .drip-times-container {
     max-width: 890px;
@@ -263,7 +263,7 @@
 
 .drip-attention-wrapper {
     background-color: rgba(222, 206, 198, 0.8);
-    padding: 55px 0 70px 0;
+    padding: 60px 0;
     text-align: center;
 }
 .drip-attention-wrapper h3 {
@@ -391,4 +391,3 @@
   .price {
     white-space: nowrap;            /* 改行させない */
   }
-  

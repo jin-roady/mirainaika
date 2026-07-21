@@ -105,3 +105,110 @@
 .flow-of-treatment-notes-wrapper .dashed-non {
     border-bottom: 0px;
 }
+
+/* Improve wrapped text while keeping the original page design. */
+.flow-of-treatment-step-wrapper dl dt {
+    padding-left: 1em;
+    text-indent: -1em;
+    line-height: 1.6;
+}
+.flow-reserve-hours {
+    display: grid !important;
+    width: min(100%, 640px);
+    margin: 25px auto 0 !important;
+    gap: 10px;
+}
+.flow-reserve-hours-row {
+    display: grid !important;
+    grid-template-columns: minmax(10em, 1fr) minmax(0, 1.45fr);
+    gap: 16px;
+    align-items: baseline;
+    padding: 10px 14px;
+    border-bottom: 1px dashed #1A1A1A;
+}
+.flow-reserve-hours-row:last-child {
+    border-bottom: 0;
+}
+.flow-reserve-hours-row span {
+    text-align: left !important;
+}
+
+.flow-of-treatment-notes-wrapper div > ul > li {
+    position: relative;
+    padding-left: 1.25em;
+    line-height: 1.75;
+}
+.flow-of-treatment-notes-wrapper div > ul > li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+}
+.flow-of-treatment-notes-wrapper div > ul > li > ul {
+    margin-top: 10px;
+}
+.flow-of-treatment-notes-wrapper div > ul > li > ul > li {
+    position: relative;
+    padding-left: 1em;
+    line-height: 1.75;
+}
+.flow-of-treatment-notes-wrapper div > ul > li > ul > li::before {
+    position: absolute;
+    left: 0;
+}
+
+/* Limit the FAQ correction to the flow page. */
+.flow-of-treatment-notes-wrapper + .faq-common-wrapper .title {
+    display: grid;
+    grid-template-columns: max-content max-content minmax(0, 1fr);
+    align-items: start;
+    column-gap: 16px;
+    padding-right: 4.5em;
+    line-height: 1.65;
+}
+.flow-of-treatment-notes-wrapper + .faq-common-wrapper .title span:first-child {
+    align-self: center;
+}
+.flow-of-treatment-notes-wrapper + .faq-common-wrapper .title span:nth-child(2) {
+    padding: 0;
+    font-size: 1.65em;
+    line-height: 1;
+}
+.flow-of-treatment-notes-wrapper + .faq-common-wrapper .title span:last-child {
+    min-width: 0;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+}
+.flow-of-treatment-notes-wrapper + .faq-common-wrapper .title::after {
+    top: 50%;
+    right: 2em;
+}
+
+@media screen and (max-width: 690px) {
+    .flow-reserve-hours {
+        width: 100%;
+    }
+    .flow-reserve-hours-row {
+        grid-template-columns: 1fr;
+        gap: 2px;
+        padding: 10px 0;
+    }
+    .flow-reserve-hours-row span:first-child {
+        color: #906F64;
+    }
+    .flow-of-treatment-notes-wrapper div > ul > li {
+        padding-left: 1.1em;
+    }
+    .flow-of-treatment-notes-wrapper div > ul > li > ul > li {
+        padding-left: 1em;
+    }
+    .flow-of-treatment-notes-wrapper + .faq-common-wrapper .title {
+        column-gap: 10px;
+        padding-right: 3.5em;
+    }
+    .flow-of-treatment-notes-wrapper + .faq-common-wrapper .title span:nth-child(2) {
+        font-size: 1.45em;
+    }
+    .flow-of-treatment-notes-wrapper + .faq-common-wrapper .title::after {
+        right: 1.5em;
+    }
+}
