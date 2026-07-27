@@ -181,14 +181,27 @@
 			.conponent-name h6 {
 				max-width: 100%;
 				white-space: normal;
-				overflow-wrap: normal;
-				word-break: keep-all;
+				overflow-wrap: anywhere;
+				word-break: normal;
 				font-size: 0.95em;
 				line-height: 1.6;
 			}
 			.conponent-name .homecare-price {
-				display: block;
-				margin-left: 1.2em;
+				display: inline;
+				margin-left: 0;
+				white-space: nowrap;
+			}
+			.conponent-name h6.homecare-single-line {
+				flex: 0 0 100%;
+				width: 100%;
+				white-space: nowrap;
+				overflow-wrap: normal;
+				font-size: 0.95em;
+				letter-spacing: 0;
+			}
+			.drip-component-container.homecare-product-container {
+				padding-left: 10px;
+				padding-right: 10px;
 			}
 			.drip-component-wrapper {
 				overflow: hidden;
@@ -229,6 +242,18 @@
 			.dermeden-product-img {
 				max-width: 100%;
 				margin: 20px auto;
+			}
+		}
+
+		@media screen and (max-width: 360px) {
+			.conponent-name h6.homecare-single-line {
+				font-size: 0.85em;
+			}
+		}
+
+		@media screen and (max-width: 330px) {
+			.conponent-name h6.homecare-single-line {
+				font-size: 0.74em;
 			}
 		}
 	</style>
@@ -336,9 +361,9 @@
 
 	<section class="drip-component-wrapper">
 		<h4>ホームケア製品（WiQo）</h4>
-		<div class="drip-component-container">
+		<div class="drip-component-container homecare-product-container">
 			<div class="conponent-name">
-				<h6>・WiQo 保湿ナリシングクリーム<span class="homecare-price">（50ml）：11,000円</span></h6>
+				<h6 class="homecare-single-line">・WiQo 保湿ナリシングクリーム<span class="homecare-price">（50ml）：11,000円</span></h6>
 				<div>
 					<p class="conponent-name-tag1">保湿</p>
 					<p class="conponent-name-tag2">バリア回復</p>
@@ -375,7 +400,7 @@
 			    <div class="arrow"><img src="images/arrow01.svg" alt=""></div>
 			</a>
 			<a href="document/__________0.pdf" class="docment-preview02">
-				<p class="p01">20歳未満の方<br>保護者の承諾が必要です。<br>保護者同意書</p>
+				<p class="p01">保護者同意書<br>20歳未満の方は<br>保護者の承諾が必要です。</p>
 				<div class="arrow"><img src="images/arrow01.svg" alt=""></div>
 			</a>
 		</div>
