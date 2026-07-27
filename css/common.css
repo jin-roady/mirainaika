@@ -140,7 +140,8 @@ body {
 .document-wrapper .docment-preview01,
 .document-wrapper .docment-preview02,
 .document-wrapper .document-card {
-    --document-corner-color: #ee958a;
+    /* Treatment explanation/consent forms use the common green corner. */
+    --document-corner-color: #9bd45a;
     position: relative;
     display: block;
     width: 252px;
@@ -161,16 +162,33 @@ body {
     border-right: 43px solid transparent;
 }
 
-.document-wrapper a[href*="psform"].docment-preview01,
+.document-wrapper a[href*="psform"],
+.document-wrapper a[href*="bihada"],
+.document-wrapper a[href*="free-interview"],
+.document-wrapper a[href*="free-beauty-interview"],
 .document-wrapper .document-card--yellow {
     --document-corner-color: #f8e777;
+}
+
+/* Guardian consent forms use the common red corner on every treatment page. */
+.document-wrapper a[href*="underage-consent"],
+.document-wrapper a[href*="__________0"] {
+    --document-corner-color: #ee958a;
+}
+
+.document-wrapper .document-card--green {
+    --document-corner-color: #9bd45a;
+}
+
+.document-wrapper .document-card--red {
+    --document-corner-color: #ee958a;
 }
 
 .document-wrapper .docment-preview01 .p01,
 .document-wrapper .docment-preview02 .p01,
 .document-wrapper .document-card .p01 {
     position: absolute;
-    top: 46%;
+    top: 50%;
     left: 50%;
     width: 100%;
     margin: 0;
@@ -178,7 +196,8 @@ body {
     transform: translate(-50%, -50%);
     color: #1a1a1a;
     font-size: 13px;
-    font-weight: 400;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 300;
     line-height: 1.55;
     letter-spacing: 0;
     overflow-wrap: anywhere;
@@ -187,11 +206,7 @@ body {
 .document-wrapper .docment-preview01 .arrow,
 .document-wrapper .docment-preview02 .arrow,
 .document-wrapper .document-card .arrow {
-    position: absolute;
-    bottom: 18px;
-    left: 50%;
-    width: 11px;
-    transform: translateX(-50%);
+    display: none !important;
 }
 
 .document-wrapper .docment-preview01 .arrow img,
