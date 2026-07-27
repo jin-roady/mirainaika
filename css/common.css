@@ -421,3 +421,8 @@ footer {
     font-size: 6px;
     }
 }
+/* Beauty treatment page titles: preserve desktop labels while simplifying mobile labels. */
+.beauty-treatment-title {
+  border-bottom: 2px dashed #A48A81;
+  text-decoration: none;
+}
