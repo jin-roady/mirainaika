@@ -182,6 +182,13 @@
     border-left: 6px solid #000;
     margin-bottom: 40px;
 }
+.pico-menu-detail h4.pico-treatment-detail-heading {
+    box-sizing: border-box;
+    max-width: 890px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .pico-menu-detail p {
     font-size: 0.875em;
     line-height: 27px;

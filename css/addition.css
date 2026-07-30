@@ -172,8 +172,16 @@
     letter-spacing: 1px;
 }
 
+.drip-component-wrapper.ultimgun-treatment-detail-wrapper {
+    padding-bottom: 30px;
+}
+
+.drip-component-wrapper.ultimgun-lineup-wrapper {
+    padding-top: 30px;
+}
+
 .ultimgun-lineup-wrapper h4 {
-    margin-top: 40px !important;
+    margin-top: 0 !important;
 }
 
 .about-wrapper .about_bg_sp {
@@ -295,6 +303,20 @@ a.about-image img {
 }
 
 @media screen and (max-width: 690px) {
+  h4.responsive-treatment-detail-heading {
+    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 1.25em !important;
+    line-height: 1.6 !important;
+    padding-left: 14px !important;
+    border-left: 5px solid #000 !important;
+    margin-bottom: 20px !important;
+    white-space: normal;
+    word-break: normal !important;
+    overflow-wrap: break-word !important;
+  }
+
   .beauty-content-wrapper > h3,
   .dermapen-content-wrapper > h3,
   .dermapen-point-container > h3,
@@ -793,6 +815,9 @@ a.about-image img {
   }
   .beauty-price-list .content-wrapper .piamo-body-label span {
     display: block;
+  }
+  .beauty-price-list .content-wrapper .piamo-body-label span + span {
+    padding-left: 1em;
   }
   .beauty-price-list .content-wrapper .piamo-body-price-row > .piamo-body-price {
     align-self: start;

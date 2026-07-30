@@ -28,6 +28,25 @@
     margin: 0 auto;
     padding: 50px 0 0 0;
 }
+.treatment-detail-heading {
+    box-sizing: border-box;
+    max-width: 900px;
+    font-size: 1.5625em;
+    line-height: 1.6;
+    padding-left: 20px;
+    border-left: 6px solid #000;
+    margin: 60px auto 20px;
+}
+.dermapen-point-wrapper.treatment-detail-section {
+    padding-bottom: 60px;
+}
+.treatment-detail-section .yag-content-container {
+    padding-top: 0;
+}
+.drip-component-wrapper h4.treatment-detail-heading {
+    max-width: none;
+    margin: 0 0 20px;
+}
 .yag-content-container div {
     padding: 24px 0 8px 0;
     border-bottom: 1px #1a1a1a dashed;
@@ -50,13 +69,35 @@
 }
 
 .dermapen-risk-wrapper.yag-risk-wrapper--spaced {
-    margin-top: 60px;
+    margin-top: 0;
 }
 
 .drip-component-wrapper.yag-detail-wrapper {
-    padding: 50px 20px 85px;
+    padding: 50px 20px 60px;
 }
 
 .yag-detail-wrapper h4 {
     margin: 0 0 40px;
+}
+
+@media screen and (max-width: 690px) {
+    .treatment-detail-heading {
+        font-size: 1.25em;
+        line-height: 1.6;
+        padding-left: 14px;
+        border-left: 5px solid #000;
+        margin: 40px auto 20px;
+    }
+
+    .drip-component-wrapper h4.treatment-detail-heading {
+        font-size: 1.25em;
+        line-height: 1.6;
+        padding-left: 14px;
+        border-left: 5px solid #000;
+        margin: 0 0 20px;
+    }
+
+    .dermapen-point-wrapper.treatment-detail-section {
+        padding-bottom: 40px;
+    }
 }

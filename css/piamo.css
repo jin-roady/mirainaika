@@ -198,12 +198,20 @@
   }
 
   .piamo-section {
-    margin: 2rem auto;
+    margin: 2rem auto 0;
     max-width: 1000px;  
     padding: 2em;
     background-color: #f9f9f9;
   }
-  
+
+  .piamo-section .piamo-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .piamo-treatment-detail-wrapper {
+    padding-top: 30px;
+  }
+
   .piamo-heading {
     font-size: 1.5em;
     font-weight: bold;
@@ -332,4 +340,3 @@
   .piamo-table tbody tr:hover {
     background-color: #f0f8ff;
   }
-  

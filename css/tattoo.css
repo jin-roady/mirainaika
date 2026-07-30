@@ -119,11 +119,13 @@
     padding: 0 0 90px 0;
 }
 .tattoo-detail-wrapper h4 {
+    box-sizing: border-box;
+    max-width: 890px;
     font-size: 1.5625em;
     padding-left: 20px;
     padding-bottom: 2px;
     border-left: 6px solid #000;
-    margin: 75px 0 0 0;
+    margin: 75px auto 0;
 }
 .tattoo-detail-wrapper p {
     font-size: 0.875em;
@@ -132,11 +134,17 @@
 .tattoo-detail-container {
     max-width: 890px;
     margin: 0 auto;
-    padding: 26px 0 0 0;
+    padding: 40px 0 0 0;
 }
 .tattoo-detail-content {
     padding: 24px 0 8px 0;
     border-bottom: 1px #1a1a1a dashed;
+}
+.tattoo-detail-content:first-child {
+    padding-top: 0;
+}
+.tattoo-detail-content:first-child h5 {
+    margin-top: 0;
 }
 .tattoo-detail-container h5 {
     font-size: 0.875em;

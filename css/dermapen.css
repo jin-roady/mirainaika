@@ -201,6 +201,10 @@
     max-width: 1000px;
     margin: 0 auto;
 }
+.dermapen-treatment-detail {
+    width: 100%;
+    margin-bottom: 60px;
+}
 .pico-menu-detail h4 {
     font-size: 1.5625em;
     padding-left: 20px;
@@ -238,6 +242,9 @@ background: url("../images/doui_bg02.svg");
 //////////////////////// */
 @media screen and (max-width: 690px) {
 
+    .dermapen-pc-break {
+        display: none;
+    }
     .dermapen-content-wrapper,
     .dermapen-point-wrapper,
     .dermapen-risk-wrapper,
