@@ -76,6 +76,12 @@
   margin: 0;
 }
 
+.beauty-price-list .content-wrapper > div:not(.beauty-price-section-row) > p:last-child:not(:only-child) {
+  margin-left: auto;
+  text-align: right;
+  white-space: nowrap;
+}
+
 #toggle5 + .title + .content .content-wrapper > div:not(.beauty-price-section-row):not(.hydra-gender-heading) > p:first-child::before {
   content: "・";
 }
@@ -116,8 +122,9 @@
 
 .beauty-price-list-set .content-wrapper div {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.35em;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 1em;
+  align-items: start;
 }
 
 .beauty-price-list-set .content-wrapper div p:first-child {
@@ -128,11 +135,11 @@
 }
 
 .beauty-price-list-set .content-wrapper div p:last-child {
-  justify-self: start;
+  justify-self: end;
   min-width: 0;
   max-width: 100%;
-  text-align: left;
-  white-space: normal;
+  text-align: right;
+  white-space: nowrap;
   overflow-wrap: anywhere;
 }
 
@@ -783,10 +790,11 @@ a.about-image img {
   }
   .beauty-price-list .content-wrapper > div:not(.beauty-price-section-row) > p:last-child:not(:only-child) {
     align-self: start;
-    justify-self: start;
+    justify-self: end;
     max-width: none;
-    padding-left: 1em;
-    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: right;
     font-weight: 600;
     font-variant-numeric: tabular-nums;
   }
@@ -821,11 +829,11 @@ a.about-image img {
   }
   .beauty-price-list .content-wrapper .piamo-body-price-row > .piamo-body-price {
     align-self: start;
-    justify-self: start;
+    justify-self: end;
     max-width: none;
     margin-left: 0;
-    padding-left: 1em;
-    text-align: left;
+    padding-left: 0;
+    text-align: right;
     font-weight: 600;
     white-space: nowrap;
   }
@@ -860,11 +868,11 @@ a.about-image img {
     word-break: normal;
   }
   .beauty-price-list-set .content-wrapper div p:last-child {
-    justify-self: start;
+    justify-self: end;
     min-width: 0;
     max-width: 100%;
-    text-align: left;
-    white-space: normal;
+    text-align: right;
+    white-space: nowrap;
     overflow-wrap: anywhere;
   }
   .beauty-price-text {
